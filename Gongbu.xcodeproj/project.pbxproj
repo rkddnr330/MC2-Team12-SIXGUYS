@@ -16,6 +16,7 @@
 		7757BFAB28520127000182E5 /* DetailStandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAA28520127000182E5 /* DetailStandingView.swift */; };
 		7757BFAD28520134000182E5 /* DetailNFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAC28520134000182E5 /* DetailNFCView.swift */; };
 		7757BFAF28520143000182E5 /* DetailInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAE28520143000182E5 /* DetailInformationView.swift */; };
+		7757BFB1285210AB000182E5 /* UserGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB0285210AB000182E5 /* UserGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		7757BFAA28520127000182E5 /* DetailStandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStandingView.swift; sourceTree = "<group>"; };
 		7757BFAC28520134000182E5 /* DetailNFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNFCView.swift; sourceTree = "<group>"; };
 		7757BFAE28520143000182E5 /* DetailInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationView.swift; sourceTree = "<group>"; };
+		7757BFB0285210AB000182E5 /* UserGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				7757BFA22851FEAF000182E5 /* DetailView.swift */,
 				7757BFAC28520134000182E5 /* DetailNFCView.swift */,
+				7757BFB0285210AB000182E5 /* UserGrid.swift */,
 				7757BFAE28520143000182E5 /* DetailInformationView.swift */,
 				7757BFAA28520127000182E5 /* DetailStandingView.swift */,
 				7757BFA828520002000182E5 /* RoomListDemo.swift */,
@@ -166,6 +169,7 @@
 				7757BFA32851FEAF000182E5 /* DetailView.swift in Sources */,
 				391921FE2840BB3A00094A48 /* GongbuApp.swift in Sources */,
 				7757BFAF28520143000182E5 /* DetailInformationView.swift in Sources */,
+				7757BFB1285210AB000182E5 /* UserGrid.swift in Sources */,
 				7757BFA928520002000182E5 /* RoomListDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gongbu/Preview Content\"";
-				DEVELOPMENT_TEAM = PQ5FS4VVLR;
+				DEVELOPMENT_TEAM = G88S43GJPG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -324,7 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gongbu/Preview Content\"";
-				DEVELOPMENT_TEAM = PQ5FS4VVLR;
+				DEVELOPMENT_TEAM = G88S43GJPG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

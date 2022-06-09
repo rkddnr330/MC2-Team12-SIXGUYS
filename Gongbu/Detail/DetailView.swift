@@ -13,7 +13,7 @@ struct DetailView: View {
     var body: some View {
         NavigationView{
             VStack {
-                ///Carousel : TabView의 Style 중 하나
+                ///우리가 얘기한 Carousel : TabView의 Style 중 하나 (PageTabViewStyle)
                 TabView(selection: $selectedTab){
                     DetailStandingView()
                         .tag(0)
@@ -22,15 +22,18 @@ struct DetailView: View {
                     DetailInformationView()
                         .tag(2)
                 }
-                .frame(width: 340, height: 600)
-//                .tabViewStyle(PageTabViewStyle())
+                .frame(width: 340, height: 700)
                 .tabViewStyle(PageTabViewStyle())
                 .background(Color.gray)
                 .cornerRadius(15)
             }
-            .padding()
+            ///NavigationLink로 넘어와서 생기는 윗 공간 없애려고
             .navigationBarHidden(true)
+            
+//            이거 별 상관없는 코드 같으니, 나중에 확인하고 지우기
+//            .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationBarTitle(Text("영어 회화 스터디"), displayMode: .inline)
     }
 }
 

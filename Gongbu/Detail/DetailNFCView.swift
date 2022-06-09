@@ -9,7 +9,11 @@ import SwiftUI
 
 struct DetailNFCView: View {
     var body: some View {
-        UserGrid()
+        VStack(spacing: 100) {
+            UserGrid()
+            NFCButton()
+                
+        }
     }
 }
 

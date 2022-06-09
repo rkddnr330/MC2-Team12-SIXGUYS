@@ -17,6 +17,7 @@
 		7757BFAD28520134000182E5 /* DetailNFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAC28520134000182E5 /* DetailNFCView.swift */; };
 		7757BFAF28520143000182E5 /* DetailInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAE28520143000182E5 /* DetailInformationView.swift */; };
 		7757BFB1285210AB000182E5 /* UserGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB0285210AB000182E5 /* UserGrid.swift */; };
+		7757BFB328521FA6000182E5 /* NFCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB228521FA6000182E5 /* NFCButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		7757BFAC28520134000182E5 /* DetailNFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNFCView.swift; sourceTree = "<group>"; };
 		7757BFAE28520143000182E5 /* DetailInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationView.swift; sourceTree = "<group>"; };
 		7757BFB0285210AB000182E5 /* UserGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGrid.swift; sourceTree = "<group>"; };
+		7757BFB228521FA6000182E5 /* NFCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				7757BFA22851FEAF000182E5 /* DetailView.swift */,
 				7757BFAC28520134000182E5 /* DetailNFCView.swift */,
+				7757BFB228521FA6000182E5 /* NFCButton.swift */,
 				7757BFB0285210AB000182E5 /* UserGrid.swift */,
 				7757BFAE28520143000182E5 /* DetailInformationView.swift */,
 				7757BFAA28520127000182E5 /* DetailStandingView.swift */,
@@ -166,6 +169,7 @@
 				391922002840BB3A00094A48 /* ContentView.swift in Sources */,
 				7757BFAD28520134000182E5 /* DetailNFCView.swift in Sources */,
 				7757BFAB28520127000182E5 /* DetailStandingView.swift in Sources */,
+				7757BFB328521FA6000182E5 /* NFCButton.swift in Sources */,
 				7757BFA32851FEAF000182E5 /* DetailView.swift in Sources */,
 				391921FE2840BB3A00094A48 /* GongbuApp.swift in Sources */,
 				7757BFAF28520143000182E5 /* DetailInformationView.swift in Sources */,

@@ -2,9 +2,9 @@
 __너와 나 우리끼리 모여 집중해서 공부 끼리공부__
 
 ## Members
-|<img src="https://github.com/terry-koo.png">|<img src="https://github.com/rkddnr330.png">|<img src="https://github.com/terry-koo.png">|<img src="https://github.com/terry-koo.png">|<img src="https://github.com/otoolz.png">|<img src="https://github.com/Anti9uA.png">|
+|<img src="https://github.com/terry-koo.png">|<img src="https://github.com/rkddnr330.png">|<img src="https://github.com/realmountain1129.png">|<img src="https://github.com/terry-koo.png">|<img src="https://github.com/otoolz.png">|<img src="https://github.com/Anti9uA.png">|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[Terry](https://github.com/terry-koo)|[K](https://github.com/rkddnr330)|[Terry](https://github.com/terry-koo)|[Terry](https://github.com/terry-koo)|[Hongki](https://github.com/otoolz)|[Gary](https://github.com/Anti9uA)|
+|[Terry](https://github.com/terry-koo)|[K](https://github.com/rkddnr330)|[Gongdol](https://github.com/realmountain1129)|[Terry](https://github.com/terry-koo)|[Hongki](https://github.com/otoolz)|[Gary](https://github.com/Anti9uA)|
 
 ## Git Commit Message
 |*Type*|*Subject*|

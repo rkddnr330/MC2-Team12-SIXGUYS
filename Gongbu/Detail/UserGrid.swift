@@ -11,7 +11,7 @@ struct UserGrid: View {
     var body: some View {
         VStack{
         HStack {
-            Text("출석 현황")
+            Text("출결 현황")
                 .font(.title)
                 .bold()
                 .padding()

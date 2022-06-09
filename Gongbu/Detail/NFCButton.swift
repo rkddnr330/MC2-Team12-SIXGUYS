@@ -21,7 +21,7 @@ struct NFCButton: View {
                     .background(Color.ReadColor)
                     
             }
-            .frame(width: 150, height: 70, alignment: .center)
+            .frame(width: 130, height: 76, alignment: .center)
             .background(Color.ReadColor)
             .cornerRadius(10)
             
@@ -35,7 +35,7 @@ struct NFCButton: View {
                     .foregroundColor(.white)
                     .background(Color.TagColor)
             }
-            .frame(width: 150, height: 70, alignment: .center)
+            .frame(width: 130, height: 76, alignment: .center)
             .background(Color.TagColor)
             .cornerRadius(10)
         }

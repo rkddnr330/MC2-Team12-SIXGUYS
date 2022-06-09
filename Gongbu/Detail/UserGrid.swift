@@ -23,13 +23,7 @@ struct UserGrid: View {
     
     var body: some View {
         VStack{
-            HStack {
-                Text("출결 현황")
-                    .font(.title)
-                    .bold()
-                    .padding()
-                Spacer()
-            }
+
             LazyVGrid(columns: columns) {
                 ForEach(0 ..< Int(study.user.count)) { value in
                     VStack (alignment: .center) {

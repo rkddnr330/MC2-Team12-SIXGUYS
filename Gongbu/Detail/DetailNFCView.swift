@@ -10,6 +10,13 @@ import SwiftUI
 struct DetailNFCView: View {
     var body: some View {
         VStack(spacing: 100) {
+            HStack {
+                Text("출결 현황")
+                    .font(.title)
+                    .bold()
+                    .padding()
+                Spacer()
+            }
             UserGrid()
             NFCButton()
                 

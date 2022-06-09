@@ -11,7 +11,8 @@ import SwiftUI
 struct GongbuApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            RoomListDemo()
         }
     }
 }

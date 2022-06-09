@@ -11,6 +11,11 @@
 		391922002840BB3A00094A48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391921FF2840BB3A00094A48 /* ContentView.swift */; };
 		391922022840BB3B00094A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391922012840BB3B00094A48 /* Assets.xcassets */; };
 		391922052840BB3B00094A48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391922042840BB3B00094A48 /* Preview Assets.xcassets */; };
+		7757BFA32851FEAF000182E5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFA22851FEAF000182E5 /* DetailView.swift */; };
+		7757BFA928520002000182E5 /* RoomListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFA828520002000182E5 /* RoomListDemo.swift */; };
+		7757BFAB28520127000182E5 /* DetailStandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAA28520127000182E5 /* DetailStandingView.swift */; };
+		7757BFAD28520134000182E5 /* DetailNFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAC28520134000182E5 /* DetailNFCView.swift */; };
+		7757BFAF28520143000182E5 /* DetailInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAE28520143000182E5 /* DetailInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		391921FF2840BB3A00094A48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		391922012840BB3B00094A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		391922042840BB3B00094A48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7757BFA22851FEAF000182E5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7757BFA828520002000182E5 /* RoomListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListDemo.swift; sourceTree = "<group>"; };
+		7757BFAA28520127000182E5 /* DetailStandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStandingView.swift; sourceTree = "<group>"; };
+		7757BFAC28520134000182E5 /* DetailNFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNFCView.swift; sourceTree = "<group>"; };
+		7757BFAE28520143000182E5 /* DetailInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 			children = (
 				391921FD2840BB3A00094A48 /* GongbuApp.swift */,
 				391921FF2840BB3A00094A48 /* ContentView.swift */,
+				7757BFA12851FE9C000182E5 /* Detail */,
 				391922012840BB3B00094A48 /* Assets.xcassets */,
 				391922032840BB3B00094A48 /* Preview Content */,
 			);
@@ -65,6 +76,18 @@
 				391922042840BB3B00094A48 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7757BFA12851FE9C000182E5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7757BFA22851FEAF000182E5 /* DetailView.swift */,
+				7757BFAC28520134000182E5 /* DetailNFCView.swift */,
+				7757BFAE28520143000182E5 /* DetailInformationView.swift */,
+				7757BFAA28520127000182E5 /* DetailStandingView.swift */,
+				7757BFA828520002000182E5 /* RoomListDemo.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +161,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				391922002840BB3A00094A48 /* ContentView.swift in Sources */,
+				7757BFAD28520134000182E5 /* DetailNFCView.swift in Sources */,
+				7757BFAB28520127000182E5 /* DetailStandingView.swift in Sources */,
+				7757BFA32851FEAF000182E5 /* DetailView.swift in Sources */,
 				391921FE2840BB3A00094A48 /* GongbuApp.swift in Sources */,
+				7757BFAF28520143000182E5 /* DetailInformationView.swift in Sources */,
+				7757BFA928520002000182E5 /* RoomListDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

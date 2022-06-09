@@ -18,6 +18,8 @@
 		7757BFAF28520143000182E5 /* DetailInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAE28520143000182E5 /* DetailInformationView.swift */; };
 		7757BFB1285210AB000182E5 /* UserGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB0285210AB000182E5 /* UserGrid.swift */; };
 		7757BFB328521FA6000182E5 /* NFCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB228521FA6000182E5 /* NFCButton.swift */; };
+		7757BFB528522D51000182E5 /* RoomCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB428522D51000182E5 /* RoomCode.swift */; };
+		7757BFB728522D75000182E5 /* StudySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB628522D75000182E5 /* StudySchedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		7757BFAE28520143000182E5 /* DetailInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationView.swift; sourceTree = "<group>"; };
 		7757BFB0285210AB000182E5 /* UserGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGrid.swift; sourceTree = "<group>"; };
 		7757BFB228521FA6000182E5 /* NFCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCButton.swift; sourceTree = "<group>"; };
+		7757BFB428522D51000182E5 /* RoomCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCode.swift; sourceTree = "<group>"; };
+		7757BFB628522D75000182E5 /* StudySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySchedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				7757BFB228521FA6000182E5 /* NFCButton.swift */,
 				7757BFB0285210AB000182E5 /* UserGrid.swift */,
 				7757BFAE28520143000182E5 /* DetailInformationView.swift */,
+				7757BFB428522D51000182E5 /* RoomCode.swift */,
+				7757BFB628522D75000182E5 /* StudySchedule.swift */,
 				7757BFAA28520127000182E5 /* DetailStandingView.swift */,
 				7757BFA828520002000182E5 /* RoomListDemo.swift */,
 			);
@@ -167,6 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				391922002840BB3A00094A48 /* ContentView.swift in Sources */,
+				7757BFB728522D75000182E5 /* StudySchedule.swift in Sources */,
+				7757BFB528522D51000182E5 /* RoomCode.swift in Sources */,
 				7757BFAD28520134000182E5 /* DetailNFCView.swift in Sources */,
 				7757BFAB28520127000182E5 /* DetailStandingView.swift in Sources */,
 				7757BFB328521FA6000182E5 /* NFCButton.swift in Sources */,

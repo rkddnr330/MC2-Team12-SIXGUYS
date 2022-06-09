@@ -9,7 +9,30 @@ import SwiftUI
 
 struct DetailInformationView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+        VStack(spacing: 100) {
+            HStack {
+                Text("스터디 정보")
+                    .font(.title)
+                    .bold()
+                    .padding()
+                Spacer()
+            }
+            RoomCode()
+            StudySchedule()
+        }
+        Spacer()
+            Button {
+                print("방 나가기")
+            } label: {
+                Text("방 나가기")
+                    .foregroundColor(.red)
+                    .bold()
+            }
+            .padding(.bottom, 70)
+
+    }
+        .frame(width: 350, height: 700)
     }
 }
 

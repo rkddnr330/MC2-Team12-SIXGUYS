@@ -10,18 +10,20 @@ import SwiftUI
 struct DetailInformationView: View {
     var body: some View {
         VStack{
-        VStack(spacing: 100) {
-            HStack {
-                Text("스터디 정보")
-                    .font(.title)
-                    .bold()
-                    .padding()
-                Spacer()
+            VStack {
+                HStack {
+                    Text("스터디 정보")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(.vertical)
+                    Spacer()
+                }
+                RoomCode()
+                    .padding(.vertical)
+                StudySchedule()
+                    .padding(.bottom)
             }
-            RoomCode()
-            StudySchedule()
-        }
-        Spacer()
+            Spacer()
             Button {
                 print("방 나가기")
             } label: {
@@ -30,9 +32,9 @@ struct DetailInformationView: View {
                     .bold()
             }
             .padding(.bottom, 70)
-
-    }
-        .frame(width: 350, height: 700)
+            
+        }
+        .frame(width: 340, height: 700)
     }
 }
 

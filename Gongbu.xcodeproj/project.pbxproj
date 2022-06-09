@@ -90,9 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				7757BFA22851FEAF000182E5 /* DetailView.swift */,
-				7757BFAC28520134000182E5 /* DetailNFCView.swift */,
 				7757BFB228521FA6000182E5 /* NFCButton.swift */,
 				7757BFB0285210AB000182E5 /* UserGrid.swift */,
+				7757BFAC28520134000182E5 /* DetailNFCView.swift */,
 				7757BFAE28520143000182E5 /* DetailInformationView.swift */,
 				7757BFB428522D51000182E5 /* RoomCode.swift */,
 				7757BFB628522D75000182E5 /* StudySchedule.swift */,

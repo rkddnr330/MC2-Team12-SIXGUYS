@@ -24,7 +24,7 @@ struct DetailView: View {
                 }
                 .frame(width: 340, height: 700)
                 .tabViewStyle(PageTabViewStyle())
-                .background(Color.gray)
+//                .background(Color.gray)
                 .cornerRadius(15)
             }
             ///NavigationLink로 넘어와서 생기는 윗 공간 없애려고

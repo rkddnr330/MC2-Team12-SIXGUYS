@@ -1,10 +1,3 @@
-//
-//  HomeView.swift
-//  Gongbu
-//
-//  Created by Kyubo Shim on 2022/06/05.
-//
-
 import SwiftUI
 import Firebase
 
@@ -21,7 +14,7 @@ struct HomeView: View {
                         try? Auth.auth().signOut()
                     }
                     
-                    // setting back view to login
+                    // 로그아웃
                     withAnimation(.easeInOut){
                         log_Status = false
                     }

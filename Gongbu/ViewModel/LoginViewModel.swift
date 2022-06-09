@@ -1,10 +1,3 @@
-//
-//  LoginViewModel.swift
-//  Gongbu
-//
-//  Created by Kyubo Shim on 2022/06/05.
-//
-
 import SwiftUI
 import Firebase
 import CryptoKit
@@ -15,13 +8,13 @@ class LoginViewModel: ObservableObject {
     @AppStorage("log_status") var log_Status = false
     
     func authenticate(credential: ASAuthorizationAppleIDCredential) {
-        // get token
+        // 토큰
         guard let token = credential.identityToken else {
             print("error with firebase")
             return
         }
         
-        // token string
+        // 토큰 문자열
         guard let tokenString = String(data: token, encoding: .utf8) else {
             print("error with token")
             return
@@ -35,10 +28,10 @@ class LoginViewModel: ObservableObject {
                 return
             }
             
-            // logged in success
+            // 로그인 성공
             print("Logged in Success")
             
-            // Directing user to home page
+            // status 값을 바꾸면서 홈화면으로 이동
             withAnimation(.easeInOut) {
                 self.log_Status = true
             }

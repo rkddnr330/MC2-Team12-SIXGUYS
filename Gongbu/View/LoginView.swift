@@ -1,10 +1,3 @@
-//
-//  LoginView.swift
-//  Gongbu
-//
-//  Created by Kyubo Shim on 2022/06/05.
-//
-
 import SwiftUI
 import AuthenticationServices
 
@@ -15,7 +8,7 @@ struct LoginView: View {
             Text("(대충 코끼리 로고 있는 배경사진)")
             
             SignInWithAppleButton { (request) in
-                // requesting parameters from apple login
+                // 파라미터 요청
                 loginData.nonce = randomNonceString()
                 request.requestedScopes = [.email, .fullName]
                 request.nonce = sha256(loginData.nonce)

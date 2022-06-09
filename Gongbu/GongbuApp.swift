@@ -1,10 +1,3 @@
-//
-//  GongbuApp.swift
-//  Gongbu
-//
-//  Created by Terry Koo on 2022/05/27.
-//
-
 import SwiftUI
 import Firebase
 

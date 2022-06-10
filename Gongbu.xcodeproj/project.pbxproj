@@ -12,8 +12,8 @@
 		204E74D6284CDAC600EBEF22 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 204E74D5284CDAC600EBEF22 /* FirebaseAnalytics */; };
 		204E74D8284CDAC600EBEF22 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 204E74D7284CDAC600EBEF22 /* FirebaseAuth */; };
 		204E74DA284CDAC600EBEF22 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 204E74D9284CDAC600EBEF22 /* FirebaseFirestore */; };
-		204E74DC284CE18300EBEF22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 204E74DB284CE18300EBEF22 /* GoogleService-Info.plist */; };
 		204E74DE284CE73400EBEF22 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E74DD284CE73400EBEF22 /* HomeView.swift */; };
+		20E57E7D2853226900DEC037 /* GoogleService-Info.plist 15-55-27-498.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20E57E7C2853226900DEC037 /* GoogleService-Info.plist 15-55-27-498.plist */; };
 		391921FE2840BB3A00094A48 /* GongbuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391921FD2840BB3A00094A48 /* GongbuApp.swift */; };
 		391922002840BB3A00094A48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391921FF2840BB3A00094A48 /* ContentView.swift */; };
 		391922022840BB3B00094A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391922012840BB3B00094A48 /* Assets.xcassets */; };
@@ -24,8 +24,8 @@
 		204E74CD284CDA2200EBEF22 /* Gongbu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gongbu.entitlements; sourceTree = "<group>"; };
 		204E74CE284CDA3200EBEF22 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		204E74D0284CDA5F00EBEF22 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		204E74DB284CE18300EBEF22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		204E74DD284CE73400EBEF22 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		20E57E7C2853226900DEC037 /* GoogleService-Info.plist 15-55-27-498.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist 15-55-27-498.plist"; path = "../../../.Trash/GoogleService-Info.plist 15-55-27-498.plist"; sourceTree = "<group>"; };
 		391921FA2840BB3A00094A48 /* Gongbu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gongbu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		391921FD2840BB3A00094A48 /* GongbuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GongbuApp.swift; sourceTree = "<group>"; };
 		391921FF2840BB3A00094A48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		391921FC2840BB3A00094A48 /* Gongbu */ = {
 			isa = PBXGroup;
 			children = (
-				204E74DB284CE18300EBEF22 /* GoogleService-Info.plist */,
+				20E57E7C2853226900DEC037 /* GoogleService-Info.plist 15-55-27-498.plist */,
 				204E74D3284CDA6E00EBEF22 /* ViewModel */,
 				204E74D2284CDA6600EBEF22 /* View */,
 				204E74CD284CDA2200EBEF22 /* Gongbu.entitlements */,
@@ -169,9 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E57E7D2853226900DEC037 /* GoogleService-Info.plist 15-55-27-498.plist in Resources */,
 				391922052840BB3B00094A48 /* Preview Assets.xcassets in Resources */,
 				391922022840BB3B00094A48 /* Assets.xcassets in Resources */,
-				204E74DC284CE18300EBEF22 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,11 +345,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Gongbu/Gongbu.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gongbu/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Y6P5ZFWBM8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -364,7 +364,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sixguys.Gongbu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Gongbu;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

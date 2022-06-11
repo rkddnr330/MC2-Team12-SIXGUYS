@@ -21,7 +21,6 @@
 		7757BFB528522D51000182E5 /* RoomCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB428522D51000182E5 /* RoomCode.swift */; };
 		7757BFB728522D75000182E5 /* StudySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB628522D75000182E5 /* StudySchedule.swift */; };
 		7757BFB92852E520000182E5 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB82852E520000182E5 /* Ranking.swift */; };
-		77F212A32854C31B0066E537 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F212A22854C31B0066E537 /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +39,6 @@
 		7757BFB428522D51000182E5 /* RoomCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCode.swift; sourceTree = "<group>"; };
 		7757BFB628522D75000182E5 /* StudySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySchedule.swift; sourceTree = "<group>"; };
 		7757BFB82852E520000182E5 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
-		77F212A22854C31B0066E537 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +116,6 @@
 				7757BFAE28520143000182E5 /* DetailInformationView.swift */,
 				7757BFB428522D51000182E5 /* RoomCode.swift */,
 				7757BFB628522D75000182E5 /* StudySchedule.swift */,
-				77F212A22854C31B0066E537 /* ToastView.swift */,
 			);
 			path = DetailInformation;
 			sourceTree = "<group>";
@@ -209,7 +206,6 @@
 				7757BFAB28520127000182E5 /* DetailRankingView.swift in Sources */,
 				7757BFB328521FA6000182E5 /* NFCButton.swift in Sources */,
 				7757BFA32851FEAF000182E5 /* DetailView.swift in Sources */,
-				77F212A32854C31B0066E537 /* ToastView.swift in Sources */,
 				391921FE2840BB3A00094A48 /* GongbuApp.swift in Sources */,
 				7757BFAF28520143000182E5 /* DetailInformationView.swift in Sources */,
 				7757BFB1285210AB000182E5 /* UserGrid.swift in Sources */,

@@ -1,21 +1,21 @@
 //
-//  DetailStandingView.swift
+//  Ranking.swift
 //  Gongbu
 //
-//  Created by Park Kangwook on 2022/06/09.
+//  Created by Park Kangwook on 2022/06/10.
 //
 
 import SwiftUI
 
 struct StudyTable {
-    var teamNames = ["Sporting", "Real", "Colorado", "Minnesota"]
+    var teamNames = ["Kkoma", "Gongdol", "Terry", "Hongki"]
     var teamMP = ["2", "2", "2", "2"]
     var teamWins = ["2", "1", "0", "1"]
     var teamDraws = ["0", "1", "1", "1"]
     var teamLosses = ["0", "0", "1", "0"]
 }
 
-struct DetailStandingView: View {
+struct Ranking: View {
     @State private var table = StudyTable()
     
     var body: some View {
@@ -66,12 +66,10 @@ struct DetailStandingView: View {
             .listStyle(.plain)
         }
     }
-    
-    
 }
 
-struct DetailStandingView_Previews: PreviewProvider {
+struct Ranking_Previews: PreviewProvider {
     static var previews: some View {
-        DetailStandingView()
+        Ranking()
     }
 }

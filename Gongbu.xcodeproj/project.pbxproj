@@ -13,13 +13,15 @@
 		391922052840BB3B00094A48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391922042840BB3B00094A48 /* Preview Assets.xcassets */; };
 		7757BFA32851FEAF000182E5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFA22851FEAF000182E5 /* DetailView.swift */; };
 		7757BFA928520002000182E5 /* RoomListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFA828520002000182E5 /* RoomListDemo.swift */; };
-		7757BFAB28520127000182E5 /* DetailStandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAA28520127000182E5 /* DetailStandingView.swift */; };
+		7757BFAB28520127000182E5 /* DetailRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAA28520127000182E5 /* DetailRankingView.swift */; };
 		7757BFAD28520134000182E5 /* DetailNFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAC28520134000182E5 /* DetailNFCView.swift */; };
 		7757BFAF28520143000182E5 /* DetailInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFAE28520143000182E5 /* DetailInformationView.swift */; };
 		7757BFB1285210AB000182E5 /* UserGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB0285210AB000182E5 /* UserGrid.swift */; };
 		7757BFB328521FA6000182E5 /* NFCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB228521FA6000182E5 /* NFCButton.swift */; };
 		7757BFB528522D51000182E5 /* RoomCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB428522D51000182E5 /* RoomCode.swift */; };
 		7757BFB728522D75000182E5 /* StudySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB628522D75000182E5 /* StudySchedule.swift */; };
+		7757BFB92852E520000182E5 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757BFB82852E520000182E5 /* Ranking.swift */; };
+		77F212A32854C31B0066E537 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F212A22854C31B0066E537 /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,13 +32,15 @@
 		391922042840BB3B00094A48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7757BFA22851FEAF000182E5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7757BFA828520002000182E5 /* RoomListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListDemo.swift; sourceTree = "<group>"; };
-		7757BFAA28520127000182E5 /* DetailStandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStandingView.swift; sourceTree = "<group>"; };
+		7757BFAA28520127000182E5 /* DetailRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRankingView.swift; sourceTree = "<group>"; };
 		7757BFAC28520134000182E5 /* DetailNFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNFCView.swift; sourceTree = "<group>"; };
 		7757BFAE28520143000182E5 /* DetailInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationView.swift; sourceTree = "<group>"; };
 		7757BFB0285210AB000182E5 /* UserGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGrid.swift; sourceTree = "<group>"; };
 		7757BFB228521FA6000182E5 /* NFCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCButton.swift; sourceTree = "<group>"; };
 		7757BFB428522D51000182E5 /* RoomCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCode.swift; sourceTree = "<group>"; };
 		7757BFB628522D75000182E5 /* StudySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySchedule.swift; sourceTree = "<group>"; };
+		7757BFB82852E520000182E5 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
+		77F212A22854C31B0066E537 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,16 +94,42 @@
 			isa = PBXGroup;
 			children = (
 				7757BFA22851FEAF000182E5 /* DetailView.swift */,
-				7757BFB228521FA6000182E5 /* NFCButton.swift */,
-				7757BFB0285210AB000182E5 /* UserGrid.swift */,
-				7757BFAC28520134000182E5 /* DetailNFCView.swift */,
-				7757BFAE28520143000182E5 /* DetailInformationView.swift */,
-				7757BFB428522D51000182E5 /* RoomCode.swift */,
-				7757BFB628522D75000182E5 /* StudySchedule.swift */,
-				7757BFAA28520127000182E5 /* DetailStandingView.swift */,
+				7757BFBA28531610000182E5 /* DetailNFC */,
+				7757BFBB28531633000182E5 /* DetailInformation */,
+				7757BFBC2853166B000182E5 /* DetailRanking */,
 				7757BFA828520002000182E5 /* RoomListDemo.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		7757BFBA28531610000182E5 /* DetailNFC */ = {
+			isa = PBXGroup;
+			children = (
+				7757BFAC28520134000182E5 /* DetailNFCView.swift */,
+				7757BFB228521FA6000182E5 /* NFCButton.swift */,
+				7757BFB0285210AB000182E5 /* UserGrid.swift */,
+			);
+			path = DetailNFC;
+			sourceTree = "<group>";
+		};
+		7757BFBB28531633000182E5 /* DetailInformation */ = {
+			isa = PBXGroup;
+			children = (
+				7757BFAE28520143000182E5 /* DetailInformationView.swift */,
+				7757BFB428522D51000182E5 /* RoomCode.swift */,
+				7757BFB628522D75000182E5 /* StudySchedule.swift */,
+				77F212A22854C31B0066E537 /* ToastView.swift */,
+			);
+			path = DetailInformation;
+			sourceTree = "<group>";
+		};
+		7757BFBC2853166B000182E5 /* DetailRanking */ = {
+			isa = PBXGroup;
+			children = (
+				7757BFAA28520127000182E5 /* DetailRankingView.swift */,
+				7757BFB82852E520000182E5 /* Ranking.swift */,
+			);
+			path = DetailRanking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,12 +206,14 @@
 				7757BFB728522D75000182E5 /* StudySchedule.swift in Sources */,
 				7757BFB528522D51000182E5 /* RoomCode.swift in Sources */,
 				7757BFAD28520134000182E5 /* DetailNFCView.swift in Sources */,
-				7757BFAB28520127000182E5 /* DetailStandingView.swift in Sources */,
+				7757BFAB28520127000182E5 /* DetailRankingView.swift in Sources */,
 				7757BFB328521FA6000182E5 /* NFCButton.swift in Sources */,
 				7757BFA32851FEAF000182E5 /* DetailView.swift in Sources */,
+				77F212A32854C31B0066E537 /* ToastView.swift in Sources */,
 				391921FE2840BB3A00094A48 /* GongbuApp.swift in Sources */,
 				7757BFAF28520143000182E5 /* DetailInformationView.swift in Sources */,
 				7757BFB1285210AB000182E5 /* UserGrid.swift in Sources */,
+				7757BFB92852E520000182E5 /* Ranking.swift in Sources */,
 				7757BFA928520002000182E5 /* RoomListDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

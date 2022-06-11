@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DetailInformationView: View {
+//    @Binding var isShowingToast: Bool
+    
     var body: some View {
         VStack{
             VStack {
@@ -18,10 +20,12 @@ struct DetailInformationView: View {
                         .padding(.vertical)
                     Spacer()
                 }
-                RoomCode()
-                    .padding(.vertical)
-                StudySchedule()
-                    .padding(.bottom)
+                VStack{
+                    RoomCode()
+                        .padding(.vertical)
+                    StudySchedule()
+                        .padding(.bottom)
+                }
             }
             Spacer()
             Button {
@@ -34,7 +38,7 @@ struct DetailInformationView: View {
             .padding(.bottom, 70)
             
         }
-        .frame(width: 340, height: 700)
+        .frame(width: 330, height: 700)
     }
 }
 

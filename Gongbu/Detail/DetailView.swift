@@ -15,7 +15,7 @@ struct DetailView: View {
             VStack {
                 ///우리가 얘기한 Carousel : TabView의 Style 중 하나 (PageTabViewStyle)
                 TabView(selection: $selectedTab){
-                    DetailStandingView()
+                    DetailRankingView()
                         .tag(0)
                     DetailNFCView()
                         .tag(1)

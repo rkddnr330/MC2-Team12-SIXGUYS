@@ -20,12 +20,12 @@ struct DetailNFCView: View {
                 }
                 UserGrid()
                     .padding(.vertical)
+                Spacer()
                 NFCButton()
                     .padding(.bottom, 70)
-                
             }
         }
-        .frame(width: 340, height: 700)
+        .frame(width: 330, height: 700)
     }
 }
 

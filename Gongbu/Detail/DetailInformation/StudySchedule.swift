@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct StudySchedule: View {
+    @State private var shedule = ["월요일 PM 5:00", "수요일 PM 5:00", "금요일 AM 10:00"]
+    
     var body: some View {
         VStack(alignment: .leading){
             HStack {
@@ -26,16 +28,25 @@ struct StudySchedule: View {
             }
             .padding(.vertical)
             VStack(alignment: .leading){
-                Text("월요일 PM 5:00")
-                Text("수요일 PM 5:00")
-                Text("금요일 AM 10:00")
+                List {
+                    ForEach(shedule, id: \.self) { index in
+                        Text(index)
+                    }
+//                    .onDelete(perform: delete)
+                    .onDelete { indexSet in
+                        withAnimation {
+                            shedule.remove(atOffsets: indexSet)
+                        }
+                    }
+                    .listStyle(.plain)
+                }
             }
             .font(.title2)
             .padding(.vertical)
             .foregroundColor(.black)
         }
         .padding()
-        .frame(width: 350, height: 200)
+        .frame(width: 320, height: 400)
         .background(Color(red: 0.969, green: 0.969, blue: 0.969))
         .cornerRadius(10)
     }

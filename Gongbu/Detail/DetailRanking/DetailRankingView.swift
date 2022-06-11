@@ -10,18 +10,23 @@ import SwiftUI
 struct DetailRankingView: View {
     
     var body: some View {
-        VStack{
-            HStack {
-                Text("스터디 기여도")
-                    .font(.largeTitle)
-                    .bold()
-                    .padding(.vertical)
-                Spacer()
+        VStack {
+            VStack{
+                HStack {
+                    Text("스터디 기여도")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(.vertical)
+                    Spacer()
+                }
+                VStack {
+                    Ranking()
+                        .padding(.vertical)
+                }
             }
-            Ranking()
         }
+        .frame(width: 330, height: 700)
     }
-    
 }
 
 struct DetailRankingView_Previews: PreviewProvider {

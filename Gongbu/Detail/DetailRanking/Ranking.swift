@@ -20,50 +20,57 @@ struct Ranking: View {
     
     var body: some View {
         VStack {
-            HStack(spacing: 10) {
-                Text("랭킹")
-                    .padding(.leading)
-                    .frame(width: 50.0, alignment: .leading)
-                Text("스터디원")
-                    .padding(.leading)
-                    .frame(width: 100.0, alignment: .leading)
-                Spacer()
-                Text("출석")
-                Divider()
-                    .frame(height: 20.0)
-                Text("지각")
-                Divider()
-                    .frame(height: 20.0)
-                Text("결석")
-                Divider()
-                    .frame(height: 20.0)
-                Text("승점")
-                    .padding(.trailing)
-            }
-            .font(.subheadline)
-            .foregroundColor(.gray)
-            
-            List(table.teamNames.indices, id:\.self) { i in
-                HStack(spacing: 10) {
-                    Text("\(i+1)").bold()
-                    
-                    Text("\(table.teamNames[i])")
-                        .frame(width: 100.0, alignment: .leading)
+            VStack {
+                HStack() {
+                    Text("랭킹")
+                        .padding(.leading)
+                        .frame(width: 50.0, alignment: .leading)
+                    Text("멤버")
+                        .padding(.horizontal)
+                        .frame(width: 80.0, alignment: .center)
                     Spacer()
-                    Text("\(table.teamMP[i])")
-                        .frame(width: 12) // replace 12 with any value for the exact result you're expecting
+                    Text("출석")
                     Divider()
-                    Text("\(table.teamWins[i])")
-                        .frame(width: 12) // doesn't have to match the above Text's width either could be any value and would still work
+                        .frame(height: 20.0)
+                    Text("지각")
                     Divider()
-                    Text("\(table.teamDraws[i])")
-                        .frame(width: 12)
+                        .frame(height: 20.0)
+                    Text("결석")
                     Divider()
-                    Text("\(table.teamLosses[i])")
-                        .frame(width: 12)
+                        .frame(height: 20.0)
+                    Text("승점")
+                        .padding(.trailing)
                 }
+                .font(.subheadline)
+                .foregroundColor(.gray)
+                
+                List(table.teamNames.indices, id:\.self) { i in
+                    HStack() {
+                        Text("\(i+1)").bold()
+                            .frame(width:20, alignment: .leading)
+                        
+                        Text("\(table.teamNames[i])")
+                            .frame(width: 85.0, alignment: .leading)
+                            .padding(.horizontal)
+//                        Spacer()
+                        Text("\(table.teamMP[i])")
+                            .frame(width: 20) // replace 12 with any value for the exact result you're expecting
+                        Divider()
+                        Text("\(table.teamWins[i])")
+                            .frame(width: 20) // doesn't have to match the above Text's width either could be any value and would still work
+                        Divider()
+                        Text("\(table.teamDraws[i])")
+                            .frame(width: 30)
+                        Divider()
+                        Text("\(table.teamLosses[i])")
+                            .frame(width: 20)
+                    }
+                }
+                .listStyle(.plain)
+                .frame(width: 330, height: 500)
+                
             }
-            .listStyle(.plain)
+            .frame(width: 330, height: 500)
         }
     }
 }

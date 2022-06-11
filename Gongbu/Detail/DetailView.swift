@@ -26,6 +26,9 @@ struct DetailView: View {
                 .tabViewStyle(PageTabViewStyle())
 //                .background(Color.gray)
                 .cornerRadius(15)
+                .onAppear {
+                      setupAppearance()
+                }
             }
             ///NavigationLink로 넘어와서 생기는 윗 공간 없애려고
             .navigationBarHidden(true)
@@ -35,6 +38,10 @@ struct DetailView: View {
         }
         .navigationBarTitle(Text("영어 회화 스터디"), displayMode: .inline)
     }
+    func setupAppearance() {
+        UIPageControl.appearance().currentPageIndicatorTintColor = UIColor(red: 0.467, green: 0.696, blue: 0.821, alpha: 1.0)
+        UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
+      }
 }
 
 struct DetailView_Previews: PreviewProvider {

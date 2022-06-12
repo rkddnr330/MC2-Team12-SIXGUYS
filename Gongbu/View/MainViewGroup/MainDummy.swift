@@ -14,7 +14,7 @@ class UserViewModel: ObservableObject {
 }
 
 extension UserViewModel {
-    static let study1: Study = Study(code: "3ABCDE",
+    static var study1: Study = Study(code: "3ABCDE",
                               name: "모각코",
                               day: "월화수",
                               time: "1011",
@@ -69,7 +69,7 @@ struct UserInfo: Hashable {
 }
 
 struct Study {
-    let code: String
+    var code: String
     var name: String
     var day: String
     var time: String

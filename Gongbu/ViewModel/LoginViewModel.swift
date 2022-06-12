@@ -7,6 +7,7 @@ class LoginViewModel: ObservableObject {
     @Published var nonce = ""
     @AppStorage("log_status") var log_Status = false
     
+    // 테스트 주석 추가
     func authenticate(credential: ASAuthorizationAppleIDCredential) {
         // 토큰
         guard let token = credential.identityToken else {

@@ -55,30 +55,3 @@ extension UserViewModel {
     static let attendenceInfo1: AttendenceInfo = AttendenceInfo(numberOfAttendance: 0, numberOfAbsent: 0, numberOfLate: 0)
 }
 
-struct User {
-    let id: UUID
-    var userInfo: UserInfo
-    var joinedStudy: [Study]
-}
-
-struct UserInfo: Hashable {
-    let id: UUID
-    let firstName: String
-    let lastName: String
-    let eMail: String
-}
-
-struct Study {
-    var code: String
-    var name: String
-    var day: String
-    var time: String
-    var memberInfo: [UserInfo]
-    var memberAttendenceInfo: [UserInfo: AttendenceInfo]
-}
-
-struct AttendenceInfo {
-    var numberOfAttendance: Int
-    var numberOfAbsent: Int
-    var numberOfLate: Int
-}

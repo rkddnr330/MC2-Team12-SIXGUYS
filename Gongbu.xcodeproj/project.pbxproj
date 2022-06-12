@@ -28,6 +28,10 @@
 		A0E3F4D12853778B00F50893 /* MainDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3F4D02853778B00F50893 /* MainDummy.swift */; };
 		A0E3F4D32853778E00F50893 /* MainListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3F4D22853778E00F50893 /* MainListCellView.swift */; };
 		A0E3F4D52853779000F50893 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3F4D42853779000F50893 /* MainHeaderView.swift */; };
+		FB53F1B22855DD53003D411A /* AttendenceInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1B12855DD53003D411A /* AttendenceInfoModel.swift */; };
+		FB53F1B42855DD6D003D411A /* StudyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1B32855DD6D003D411A /* StudyModel.swift */; };
+		FB53F1B72855DD94003D411A /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1B62855DD94003D411A /* UserInfoModel.swift */; };
+		FB53F1B92855DDB9003D411A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1B82855DDB9003D411A /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		A0E3F4D02853778B00F50893 /* MainDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDummy.swift; sourceTree = "<group>"; };
 		A0E3F4D22853778E00F50893 /* MainListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListCellView.swift; sourceTree = "<group>"; };
 		A0E3F4D42853779000F50893 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		FB53F1B12855DD53003D411A /* AttendenceInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceInfoModel.swift; sourceTree = "<group>"; };
+		FB53F1B32855DD6D003D411A /* StudyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyModel.swift; sourceTree = "<group>"; };
+		FB53F1B62855DD94003D411A /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		FB53F1B82855DDB9003D411A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 		391921FC2840BB3A00094A48 /* Gongbu */ = {
 			isa = PBXGroup;
 			children = (
+				FB53F1B02855DD28003D411A /* Model */,
 				395081882855D69C000CB1AA /* NewFolder */,
 				A0E3F4C428536A7200F50893 /* GoogleService-Info.plist */,
 				204E74D3284CDA6E00EBEF22 /* ViewModel */,
@@ -147,6 +156,17 @@
 				A0E3F4D02853778B00F50893 /* MainDummy.swift */,
 			);
 			path = MainViewGroup;
+			sourceTree = "<group>";
+		};
+		FB53F1B02855DD28003D411A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB53F1B12855DD53003D411A /* AttendenceInfoModel.swift */,
+				FB53F1B32855DD6D003D411A /* StudyModel.swift */,
+				FB53F1B62855DD94003D411A /* UserInfoModel.swift */,
+				FB53F1B82855DDB9003D411A /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB53F1B72855DD94003D411A /* UserInfoModel.swift in Sources */,
 				39EA5E772855C85C00583ECB /* EnterRoomModalView.swift in Sources */,
 				A0E3F4D52853779000F50893 /* MainHeaderView.swift in Sources */,
 				A0E3F4D32853778E00F50893 /* MainListCellView.swift in Sources */,
@@ -240,8 +261,11 @@
 				A0E3F4CF2853778900F50893 /* MainListView.swift in Sources */,
 				39EA5E782855C85C00583ECB /* CreateRoomModalView.swift in Sources */,
 				3950818A2855D6A5000CB1AA /* NewFile.swift in Sources */,
+				FB53F1B22855DD53003D411A /* AttendenceInfoModel.swift in Sources */,
 				204E74DE284CE73400EBEF22 /* HomeView.swift in Sources */,
+				FB53F1B92855DDB9003D411A /* UserModel.swift in Sources */,
 				39EA5E792855C85C00583ECB /* TestView.swift in Sources */,
+				FB53F1B42855DD6D003D411A /* StudyModel.swift in Sources */,
 				391921FE2840BB3A00094A48 /* GongbuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

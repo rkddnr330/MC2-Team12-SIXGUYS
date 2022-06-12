@@ -23,7 +23,6 @@ struct UserGrid: View {
     
     var body: some View {
         VStack{
-
             LazyVGrid(columns: columns) {
                 ForEach(0 ..< Int(study.user.count)) { value in
                     VStack (alignment: .center) {

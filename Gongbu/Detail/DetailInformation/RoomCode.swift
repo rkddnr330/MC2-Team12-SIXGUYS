@@ -9,7 +9,6 @@ import SwiftUI
 
 struct RoomCode: View {
     @State private var isShowingToast = false
-    
     private let pasteboard = UIPasteboard.general
     var roomCode = "A82VE2"
     
@@ -37,7 +36,7 @@ struct RoomCode: View {
         .cornerRadius(10)
     }
 }
-
+///room code 터치시 복사 됐다는 알림 표시
 struct ToastModifier: ViewModifier {
     @Binding var isShowing: Bool
     let duration: TimeInterval
@@ -75,13 +74,6 @@ struct ToastModifier: ViewModifier {
             .shadow(radius: 5)
         }
         .padding()
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-                withAnimation {
-                    isShowing = false
-                }
-            }
-        }
     }
 }
 extension View {

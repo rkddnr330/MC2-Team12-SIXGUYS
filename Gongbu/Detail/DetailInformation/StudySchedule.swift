@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct StudySchedule: View {
-    @State private var shedule = ["월요일 PM 5:00", "수요일 PM 5:00", "금요일 AM 10:00"]
-    @State private var isShowing = false
+    @State private var schedule = ["월요일 PM 5:00", "수요일 PM 5:00", "금요일 AM 10:00"]
+    @State private var isShowingEdit = false
     
     var body: some View {
         VStack(alignment: .leading){
@@ -20,7 +20,7 @@ struct StudySchedule: View {
                     .bold()
                 Spacer()
                 Button {
-                    isShowing = true
+                    isShowingEdit = true
                     print("일정 추가")
                 } label: {
                     Text("EDIT")
@@ -29,10 +29,10 @@ struct StudySchedule: View {
                         .foregroundColor(.black)
                         .border(.black, width: 2)
                 }
-                .sheet(isPresented: $isShowing) {
+                .sheet(isPresented: $isShowingEdit) {
                     Text("일정 편집 (일정 추가, 삭제)")
                     Button {
-                        isShowing = false
+                        isShowingEdit = false
                     } label: {
                         Text("DONE")
                     }
@@ -42,8 +42,8 @@ struct StudySchedule: View {
             .padding(.vertical)
             
             VStack(alignment: .leading){
-                ForEach(shedule, id: \.self) { index in
-                    Text(index)
+                ForEach(schedule, id: \.self) { each in
+                    Text(each)
                 }
             }
             .font(.title2)

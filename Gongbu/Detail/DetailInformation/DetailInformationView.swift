@@ -38,12 +38,13 @@ struct DetailInformationView: View {
             }
             .padding(.bottom, 70)
             .actionSheet(isPresented: $isShowingActionSheet) {
-                return ActionSheet(title: Text("정말 나가시겠습니까?"), buttons: [
-                    .destructive(Text("방 나가기")){
-                        print("방 나가기 로직 활성")
-                    },
-                    .cancel()
-                ])
+                ActionSheet(
+                    title: Text("정말 나가시겠습니까?"),
+                    buttons: [
+                        .destructive(Text("방 나가기")){ print("방 나가기 로직 활성") },
+                        .cancel()
+                    ]
+                )
             }
         }
         .frame(width: 330, height: 700)

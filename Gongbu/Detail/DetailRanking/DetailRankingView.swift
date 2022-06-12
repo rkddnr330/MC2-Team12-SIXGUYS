@@ -21,7 +21,7 @@ struct DetailRankingView: View {
                 }
                 VStack {
                     Ranking()
-                        .padding(.vertical)
+                        .padding(.bottom)
                 }
             }
         }

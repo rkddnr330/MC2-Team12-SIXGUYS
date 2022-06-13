@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct CreateRoomModalView: View {
+    
     @Binding var studyName: String
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @StateObject var userViewModel: UserViewModel = UserViewModel()
     
     var body: some View {
         NavigationView {
@@ -24,27 +26,7 @@ struct CreateRoomModalView: View {
                     Section(header: Text("스터디 시각")
                         .font(.title)
                         .fontWeight(.heavy)) {
-                            HStack{
-                                Text("월요일")
-                                    .multilineTextAlignment(.leading)
-                                Spacer()
-                                Text("오후 1:00")
-                                    .multilineTextAlignment(.trailing)
-                            }
-                            HStack{
-                                Text("수요일")
-                                    .multilineTextAlignment(.leading)
-                                Spacer()
-                                Text("오전 10:00")
-                                    .multilineTextAlignment(.trailing)
-                            }
-                            HStack{
-                                Button(action: {
-                                    // 일정 추가 할 수 있는 액션
-                                }){
-                                    Label("일정 추가", systemImage: "plus.circle.fill")
-                                }
-                            }
+                            StudyListView(userViewModel: userViewModel)
                         }
                         .headerProminence(.increased)
                 }

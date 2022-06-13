@@ -9,6 +9,15 @@ import SwiftUI
 
 struct StudySchedule: View {
     @State private var schedule = ["월요일 PM 5:00", "수요일 PM 5:00", "금요일 AM 10:00"]
+    let schedules: [Schedule] = [
+        .init(day: .sun, time: Date()),
+        .init(day: .tue, time: Date() + 120),
+        .init(day: .wed, time: Date() + 120),
+        .init(day: .mon, time: Date() + 120),
+        .init(day: .thu, time: Date() + 120),
+        .init(day: .sat, time: Date() + 120),
+        .init(day: .mon, time: Date() + 600)
+              ]
     @State private var isShowingEdit = false
     
     var body: some View {
@@ -41,17 +50,16 @@ struct StudySchedule: View {
             }
             .padding(.vertical)
             
-            VStack(alignment: .leading){
-                ForEach(schedule, id: \.self) { each in
-                    Text(each)
+            List {
+                ForEach(schedules, id: \.self) { schedule in
+                    HStack {
+                        Text(schedule.day.rawValue)
+                    }
                 }
-            }
-            .font(.title2)
-            .padding(.vertical)
-            .foregroundColor(.black)
+            }.listStyle(.plain)
         }
         .padding()
-        .frame(width: 320, height: 200)
+        .frame(width: 320)
         .background(Color(red: 0.969, green: 0.969, blue: 0.969))
         .cornerRadius(10)
     }

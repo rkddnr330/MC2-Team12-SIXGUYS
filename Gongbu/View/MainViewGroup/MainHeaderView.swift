@@ -22,7 +22,7 @@ struct MainHeaderView: View {
             Image(systemName: "person.crop.circle.fill")
                 .resizable()
                 .scaledToFit()
-            Text("\(userViewModel.user.userInfo.lastName)\(userViewModel.user.userInfo.firstName)")
+            Text("\(userViewModel.user.userInfo.fullName)")
                 .font(.title)
             Spacer()
             Menu{

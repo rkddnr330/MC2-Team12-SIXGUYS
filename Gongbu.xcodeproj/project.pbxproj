@@ -23,7 +23,6 @@
 		39EA5E772855C85C00583ECB /* EnterRoomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E732855C85B00583ECB /* EnterRoomModalView.swift */; };
 		39EA5E782855C85C00583ECB /* CreateRoomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E742855C85C00583ECB /* CreateRoomModalView.swift */; };
 		39EA5E792855C85C00583ECB /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E752855C85C00583ECB /* TestView.swift */; };
-		39EA5E7A2855C85C00583ECB /* MainView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E762855C85C00583ECB /* MainView2.swift */; };
 		77F212A92855E43A0066E537 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F212A82855E43A0066E537 /* DetailView.swift */; };
 		77F212AE2855E4650066E537 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F212AD2855E4650066E537 /* Ranking.swift */; };
 		77F212B02855E4920066E537 /* DetailRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F212AF2855E4920066E537 /* DetailRankingView.swift */; };
@@ -62,7 +61,6 @@
 		39EA5E732855C85B00583ECB /* EnterRoomModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterRoomModalView.swift; sourceTree = "<group>"; };
 		39EA5E742855C85C00583ECB /* CreateRoomModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRoomModalView.swift; sourceTree = "<group>"; };
 		39EA5E752855C85C00583ECB /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		39EA5E762855C85C00583ECB /* MainView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView2.swift; sourceTree = "<group>"; };
 		77F212A82855E43A0066E537 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		77F212AD2855E4650066E537 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		77F212AF2855E4920066E537 /* DetailRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRankingView.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				77F212A72855E3A50066E537 /* DetailView */,
 				39EA5E742855C85C00583ECB /* CreateRoomModalView.swift */,
 				39EA5E732855C85B00583ECB /* EnterRoomModalView.swift */,
-				39EA5E762855C85C00583ECB /* MainView2.swift */,
 				39EA5E752855C85C00583ECB /* TestView.swift */,
 				A0E3F4D62853779F00F50893 /* MainViewGroup */,
 				204E74CE284CDA3200EBEF22 /* LoginView.swift */,
@@ -323,7 +320,6 @@
 				A0E3F4CD2853778600F50893 /* MainView.swift in Sources */,
 				204E74CF284CDA3200EBEF22 /* LoginView.swift in Sources */,
 				77F212B82855E4F90066E537 /* DetailInformationView.swift in Sources */,
-				39EA5E7A2855C85C00583ECB /* MainView2.swift in Sources */,
 				77F212AE2855E4650066E537 /* Ranking.swift in Sources */,
 				77F212B62855E4DF0066E537 /* UserGrid.swift in Sources */,
 				A0E3F4D12853778B00F50893 /* MainDummy.swift in Sources */,

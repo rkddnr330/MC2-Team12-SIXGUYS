@@ -14,6 +14,8 @@
 		204E74DA284CDAC600EBEF22 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 204E74D9284CDAC600EBEF22 /* FirebaseFirestore */; };
 		204E74DE284CE73400EBEF22 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E74DD284CE73400EBEF22 /* HomeView.swift */; };
 		2F5D12D5285712A400999CB4 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D12D4285712A400999CB4 /* QRGenerator.swift */; };
+		2F5D12D828571D1300999CB4 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 2F5D12D728571D1300999CB4 /* CodeScanner */; };
+		2F801D29285725920065A3B5 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F801D28285725920065A3B5 /* QRScanner.swift */; };
 		391921FE2840BB3A00094A48 /* GongbuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391921FD2840BB3A00094A48 /* GongbuApp.swift */; };
 		391922002840BB3A00094A48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391921FF2840BB3A00094A48 /* ContentView.swift */; };
 		391922022840BB3B00094A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391922012840BB3B00094A48 /* Assets.xcassets */; };
@@ -51,6 +53,7 @@
 		204E74D0284CDA5F00EBEF22 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		204E74DD284CE73400EBEF22 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2F5D12D4285712A400999CB4 /* QRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
+		2F801D28285725920065A3B5 /* QRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
 		391921FA2840BB3A00094A48 /* Gongbu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gongbu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		391921FD2840BB3A00094A48 /* GongbuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GongbuApp.swift; sourceTree = "<group>"; };
 		391921FF2840BB3A00094A48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5D12D828571D1300999CB4 /* CodeScanner in Frameworks */,
 				204E74D6284CDAC600EBEF22 /* FirebaseAnalytics in Frameworks */,
 				204E74D8284CDAC600EBEF22 /* FirebaseAuth in Frameworks */,
 				204E74DA284CDAC600EBEF22 /* FirebaseFirestore in Frameworks */,
@@ -188,6 +192,7 @@
 				77F212B52855E4DF0066E537 /* UserGrid.swift */,
 				77F212B32855E4C40066E537 /* QRButton.swift */,
 				2F5D12D4285712A400999CB4 /* QRGenerator.swift */,
+				2F801D28285725920065A3B5 /* QRScanner.swift */,
 			);
 			path = DetailQR;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 				204E74D5284CDAC600EBEF22 /* FirebaseAnalytics */,
 				204E74D7284CDAC600EBEF22 /* FirebaseAuth */,
 				204E74D9284CDAC600EBEF22 /* FirebaseFirestore */,
+				2F5D12D728571D1300999CB4 /* CodeScanner */,
 			);
 			productName = Gongbu;
 			productReference = 391921FA2840BB3A00094A48 /* Gongbu.app */;
@@ -277,6 +283,7 @@
 			mainGroup = 391921F12840BB3A00094A48;
 			packageReferences = (
 				204E74D4284CDAC600EBEF22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2F5D12D628571D1300999CB4 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 391921FB2840BB3A00094A48 /* Products */;
 			projectDirPath = "";
@@ -328,6 +335,7 @@
 				77F212B22855E4B10066E537 /* DetailQRView.swift in Sources */,
 				77F212B22855E4B10066E537 /* DetailQRView.swift in Sources */,
 				77F212B02855E4920066E537 /* DetailRankingView.swift in Sources */,
+				2F801D29285725920065A3B5 /* QRScanner.swift in Sources */,
 				77F212BA2855E5140066E537 /* RoomCode.swift in Sources */,
 				39EA5E782855C85C00583ECB /* CreateRoomModalView.swift in Sources */,
 				FB53F1B22855DD53003D411A /* AttendenceInfoModel.swift in Sources */,
@@ -469,6 +477,7 @@
 				DEVELOPMENT_TEAM = Y6P5ZFWBM8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan QR";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -501,6 +510,7 @@
 				DEVELOPMENT_TEAM = Y6P5ZFWBM8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan QR";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +562,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		2F5D12D628571D1300999CB4 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -569,6 +587,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 204E74D4284CDAC600EBEF22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		2F5D12D728571D1300999CB4 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F5D12D628571D1300999CB4 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

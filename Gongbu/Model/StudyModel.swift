@@ -8,10 +8,9 @@
 import Foundation
 
 struct Study {
-    var code: String  // 나중에 let으로 수정
+    let code: String  // 나중에 let으로 수정
     var name: String
-    var day: String  // 나중에 타입 수정 예정
-    var time: String  // 나중에 타입 수정 예정
+    var schedule: [Schedule]
     var memberInfo: [UserInfo]
     var memberAttendenceInfo: [UserInfo: AttendenceInfo]
 }

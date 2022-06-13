@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NFCButton: View {
+struct QRButton: View {
     var body: some View {
         HStack(spacing:50){
             Button {
@@ -43,8 +43,8 @@ struct NFCButton: View {
     }
 }
 
-struct NFCButton_Previews: PreviewProvider {
+struct QRButton_Previews: PreviewProvider {
     static var previews: some View {
-        NFCButton()
+        QRButton()
     }
 }

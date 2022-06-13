@@ -11,4 +11,7 @@ struct AttendenceInfo {
     var numberOfAttendence: Int
     var numberOfAbsent: Int
     var numberOfLate: Int
+    var attendencePoints: Int
 }
+
+

@@ -38,7 +38,6 @@
 		A0E3F4C528536A7200F50893 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0E3F4C428536A7200F50893 /* GoogleService-Info.plist */; };
 		A0E3F4CD2853778600F50893 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3F4CC2853778600F50893 /* MainView.swift */; };
 		A0E3F4CF2853778900F50893 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3F4CE2853778900F50893 /* MainListView.swift */; };
-		A0E3F4D12853778B00F50893 /* MainDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3F4D02853778B00F50893 /* MainDummy.swift */; };
 		A0E3F4D32853778E00F50893 /* MainListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3F4D22853778E00F50893 /* MainListCellView.swift */; };
 		A0E3F4D52853779000F50893 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3F4D42853779000F50893 /* MainHeaderView.swift */; };
 		FB53F1B22855DD53003D411A /* AttendenceInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1B12855DD53003D411A /* AttendenceInfoModel.swift */; };
@@ -47,6 +46,7 @@
 		FB53F1B92855DDB9003D411A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1B82855DDB9003D411A /* UserModel.swift */; };
 		FB53F1C52857399C003D411A /* StudyListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1C42857399C003D411A /* StudyListCellView.swift */; };
 		FB53F1C728573CB4003D411A /* StudyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1C628573CB3003D411A /* StudyListView.swift */; };
+		FBBE563028577D0800DED681 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBE562F28577D0800DED681 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,7 +79,6 @@
 		A0E3F4C428536A7200F50893 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0E3F4CC2853778600F50893 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A0E3F4CE2853778900F50893 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
-		A0E3F4D02853778B00F50893 /* MainDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDummy.swift; sourceTree = "<group>"; };
 		A0E3F4D22853778E00F50893 /* MainListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListCellView.swift; sourceTree = "<group>"; };
 		A0E3F4D42853779000F50893 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 		FB53F1B12855DD53003D411A /* AttendenceInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendenceInfoModel.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		FB53F1B82855DDB9003D411A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FB53F1C42857399C003D411A /* StudyListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListCellView.swift; sourceTree = "<group>"; };
 		FB53F1C628573CB3003D411A /* StudyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListView.swift; sourceTree = "<group>"; };
+		FBBE562F28577D0800DED681 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				204E74D0284CDA5F00EBEF22 /* LoginViewModel.swift */,
+				FBBE562F28577D0800DED681 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -220,7 +221,6 @@
 				A0E3F4D42853779000F50893 /* MainHeaderView.swift */,
 				A0E3F4CE2853778900F50893 /* MainListView.swift */,
 				A0E3F4D22853778E00F50893 /* MainListCellView.swift */,
-				A0E3F4D02853778B00F50893 /* MainDummy.swift */,
 			);
 			path = MainViewGroup;
 			sourceTree = "<group>";
@@ -331,7 +331,6 @@
 				77F212B82855E4F90066E537 /* DetailInformationView.swift in Sources */,
 				77F212AE2855E4650066E537 /* Ranking.swift in Sources */,
 				77F212B62855E4DF0066E537 /* UserGrid.swift in Sources */,
-				A0E3F4D12853778B00F50893 /* MainDummy.swift in Sources */,
 				77F212B42855E4C40066E537 /* QRButton.swift in Sources */,
 				391922002840BB3A00094A48 /* ContentView.swift in Sources */,
 				77F212A92855E43A0066E537 /* DetailView.swift in Sources */,
@@ -342,6 +341,7 @@
 				77F212B02855E4920066E537 /* DetailRankingView.swift in Sources */,
 				FB53F1C52857399C003D411A /* StudyListCellView.swift in Sources */,
 				2F801D29285725920065A3B5 /* QRScanner.swift in Sources */,
+				FBBE563028577D0800DED681 /* UserViewModel.swift in Sources */,
 				77F212BA2855E5140066E537 /* RoomCode.swift in Sources */,
 				39EA5E782855C85C00583ECB /* CreateRoomModalView.swift in Sources */,
 				77F212C228576BED0066E537 /* PickerView.swift in Sources */,

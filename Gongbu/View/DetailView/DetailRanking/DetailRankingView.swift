@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetailRankingView: View {
+    @State private var isShowingPopover = false
     
     var body: some View {
         VStack {
@@ -18,14 +19,24 @@ struct DetailRankingView: View {
                         .bold()
                         .padding(.vertical)
                     Spacer()
+                    Button {
+                        isShowingPopover = true
+                    } label: {
+                        Image(systemName: "questionmark.circle")
+                    }
+                    .sheet(isPresented: $isShowingPopover) {
+                        QuestionMarkText()
+                    }
                 }
+                .padding(.vertical, 10)
                 VStack {
                     Ranking()
                         .padding(.bottom)
                 }
             }
         }
-        .frame(width: 330, height: 700)
+        ///x
+        .frame(width: 330, height: 600)
     }
 }
 

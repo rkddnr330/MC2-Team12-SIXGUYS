@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+///임의로 짠 모델! 이름 끝에 Demo가 붙어있습니다
+struct StudyDemo {
+    var codeDemo: String  // 나중에 let으로 수정
+    var nameDemo: String
+    var dayDemo: String  // 나중에 타입 수정 예정
+    var timeDemo: String  // 나중에 타입 수정 예정
+    var memberInfoDemo: [UserInfo]
+    var memberAttendenceInfoDemo: [UserInfo: AttendenceInfo]
+}
+
 struct StudyTable {
     var teamNames = ["Kkoma", "Gongdol", "Terry", "Hongki"]
     var teamMP = ["2", "2", "2", "2"]
@@ -22,29 +32,29 @@ struct Ranking: View {
         VStack {
             VStack {
                 HStack() {
-                    Text("랭킹")
-                        .padding(.leading)
-                        .frame(width: 50.0, alignment: .leading)
+                    Text("R")
+                        .padding(.leading,27)
+                        .frame(width: 60.0, alignment: .leading)
                     
-                    Text("멤버")
-                        .padding(.horizontal)
-                        .frame(width: 60.0, alignment: .center)
-                    Spacer()
+                    Image(systemName: "person.circle")
+                        .padding(.trailing)
+                        .frame(width: 110.0, alignment: .center)
                     
-                    Text("출석")
-                    Divider()
-                        .frame(height: 20.0)
+                    Circle()
+                        .frame(width: 30, height: 10, alignment: .center)
+                        .foregroundColor(.green)
                     
-                    Text("지각")
-                    Divider()
-                        .frame(height: 20.0)
+                    Circle()
+                        .frame(width: 30, height: 10, alignment: .center)
+                        .foregroundColor(.orange)
                     
-                    Text("결석")
-                    Divider()
-                        .frame(height: 20.0)
+                    Circle()
+                        .frame(width: 30, height: 10, alignment: .center)
+                        .foregroundColor(.red)
                     
-                    Text("승점")
-                        .padding(.trailing, 10)
+                    Text("T")
+                        .frame(width: 40, height: 10, alignment: .center)
+                        .padding(.trailing)
                 }
                 .font(.subheadline)
                 .foregroundColor(.gray)
@@ -75,10 +85,12 @@ struct Ranking: View {
                     }
                 }
                 .listStyle(.plain)
-                .frame(width: 340, height: 500)
+                ///순위표 어느 크기로 보여줄 것인지
+                .frame(width: 340, height: 400)
                 
             }
-            .frame(width: 330, height: 600)
+            ///RankingView에서 타이틀 - 순위표 테이블 간격 조정
+            .frame(width: 330, height: 450)
         }
     }
 }
@@ -88,3 +100,4 @@ struct Ranking_Previews: PreviewProvider {
         Ranking()
     }
 }
+

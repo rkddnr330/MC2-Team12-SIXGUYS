@@ -10,7 +10,7 @@ import Foundation
 class UserViewModel: ObservableObject {
     @Published var user: User = User(id: UUID(),
                                  userInfo: userInfo1,
-                                 joinedStudy: [study1, study2, study3, study4, study5, study6, study7])
+                                 joinedStudy: [study1, study2, study3, study4])
 }
 
 extension UserViewModel {

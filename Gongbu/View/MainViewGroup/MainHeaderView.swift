@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MainHeaderView: View {
     
+    @State private var showCreateRoomModal = false
+    @State private var showEnterRoomModal = false
+    
     @ObservedObject var userViewModel: UserViewModel
     
     var body: some View {
@@ -19,17 +22,27 @@ struct MainHeaderView: View {
             Image(systemName: "person.crop.circle.fill")
                 .resizable()
                 .scaledToFit()
-            Text("\(userViewModel.user.userInfo.lastName)\(userViewModel.user.userInfo.firstName)")
+            Text("\(userViewModel.user.userInfo.fullName)")
                 .font(.title)
             Spacer()
-            Button(action: {
-            }, label: {
-                Image(systemName: "plus")
-                    .resizable()
-                    .scaledToFit()
-                    .accentColor(.black)
-                    .padding(5)
-            })
+            Menu{
+                Button(action: { self.showEnterRoomModal = true }){
+                    Label("방 참가", systemImage: "arrowshape.turn.up.left")
+                }
+                Button(action: { self.showCreateRoomModal = true }){
+                    Label("방 생성", systemImage: "plus.circle")
+                }
+            } label: {
+                Label("", image: "plusButton")
+            }
+            .sheet(isPresented: self.$showEnterRoomModal) {
+                Text("EnterRoomModalView")
+              //  EnterRoomModalView(studyCode: $study.code)
+            }
+            .sheet(isPresented: self.$showCreateRoomModal) {
+                Text("CreateRoomModalView")
+              //  CreateRoomModalView(studyName: $study.name)
+            }
         }
         .padding()
         .frame(width: size.width, height: size.height / 10)

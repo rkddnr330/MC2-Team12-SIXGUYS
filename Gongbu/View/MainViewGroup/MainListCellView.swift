@@ -22,7 +22,7 @@ struct MainListCellView: View {
                 Spacer()
             }
             HStack {
-                Text("매주  \(joinedStudy.day)")
+                Text("매주  ")
                 Spacer()
                 Image(systemName: "person.fill")
                 Text("\(joinedStudy.memberInfo.count)")

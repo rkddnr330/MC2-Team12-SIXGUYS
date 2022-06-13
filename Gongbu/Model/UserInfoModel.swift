@@ -9,7 +9,5 @@ import Foundation
 
 struct UserInfo: Hashable {
     let id: UUID
-    let firstName: String
-    let lastName: String
-    let eMail: String
+    let fullName: String
 }

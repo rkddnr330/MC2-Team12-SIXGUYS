@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailNFCView: View {
+struct DetailQRView: View {
     var body: some View {
         VStack{
             VStack {
@@ -21,7 +21,7 @@ struct DetailNFCView: View {
                 UserGrid()
                     .padding(.vertical)
                 Spacer()
-                NFCButton()
+                QRButton()
                     .padding(.bottom, 70)
             }
         }
@@ -29,8 +29,8 @@ struct DetailNFCView: View {
     }
 }
 
-struct DetailNFCView_Previews: PreviewProvider {
+struct DetailQRView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailNFCView()
+        DetailQRView()
     }
 }

@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct QRButton: View {
+    
+    @State private var showQRCode = false
+    
     var body: some View {
         HStack(spacing:50){
             Button {
-               print("Read 발동")
+                print("Read 발동")
+                self.showQRCode = true
             } label: {
                 Text("Read")
                     .bold()
@@ -24,6 +28,9 @@ struct QRButton: View {
             .frame(width: 130, height: 76, alignment: .center)
             .background(Color(red: 0.187, green: 0.417, blue: 0.533))
             .cornerRadius(10)
+            .sheet(isPresented: $showQRCode) {
+                QRGenerateView()
+            }
             
             Button {
                 print("Tag 발동")

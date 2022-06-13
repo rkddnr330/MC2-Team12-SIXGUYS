@@ -18,7 +18,7 @@ struct DetailView: View {
                 TabView(selection: $selectedTab){
                     DetailRankingView()
                         .tag(0)
-                    DetailNFCView()
+                    DetailQRView()
                         .tag(1)
                     DetailInformationView()
                         .tag(2)

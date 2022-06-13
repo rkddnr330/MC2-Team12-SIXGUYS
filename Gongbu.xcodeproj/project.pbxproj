@@ -20,8 +20,8 @@
 		3950818A2855D6A5000CB1AA /* NewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395081892855D6A5000CB1AA /* NewFile.swift */; };
 		39EA5E772855C85C00583ECB /* EnterRoomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E732855C85B00583ECB /* EnterRoomModalView.swift */; };
 		39EA5E782855C85C00583ECB /* CreateRoomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E742855C85C00583ECB /* CreateRoomModalView.swift */; };
-		39EA5E792855C85C00583ECB /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E752855C85C00583ECB /* TestView.swift */; };
-		39EA5E7A2855C85C00583ECB /* MainView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E762855C85C00583ECB /* MainView2.swift */; };
+		39EA5E792855C85C00583ECB /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E752855C85C00583ECB /* PickerView.swift */; };
+		39EA5E7A2855C85C00583ECB /* mainView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E762855C85C00583ECB /* mainView2.swift */; };
 		77F212A92855E43A0066E537 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F212A82855E43A0066E537 /* DetailView.swift */; };
 		77F212AE2855E4650066E537 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F212AD2855E4650066E537 /* Ranking.swift */; };
 		77F212B02855E4920066E537 /* DetailRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F212AF2855E4920066E537 /* DetailRankingView.swift */; };
@@ -42,6 +42,8 @@
 		FB53F1B42855DD6D003D411A /* StudyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1B32855DD6D003D411A /* StudyModel.swift */; };
 		FB53F1B72855DD94003D411A /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1B62855DD94003D411A /* UserInfoModel.swift */; };
 		FB53F1B92855DDB9003D411A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1B82855DDB9003D411A /* UserModel.swift */; };
+		FB53F1C52857399C003D411A /* StudyListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1C42857399C003D411A /* StudyListCellView.swift */; };
+		FB53F1C728573CB4003D411A /* StudyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53F1C628573CB3003D411A /* StudyListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +59,8 @@
 		395081892855D6A5000CB1AA /* NewFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFile.swift; sourceTree = "<group>"; };
 		39EA5E732855C85B00583ECB /* EnterRoomModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterRoomModalView.swift; sourceTree = "<group>"; };
 		39EA5E742855C85C00583ECB /* CreateRoomModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRoomModalView.swift; sourceTree = "<group>"; };
-		39EA5E752855C85C00583ECB /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		39EA5E762855C85C00583ECB /* MainView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView2.swift; sourceTree = "<group>"; };
+		39EA5E752855C85C00583ECB /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		39EA5E762855C85C00583ECB /* mainView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainView2.swift; sourceTree = "<group>"; };
 		77F212A82855E43A0066E537 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		77F212AD2855E4650066E537 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		77F212AF2855E4920066E537 /* DetailRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRankingView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,8 @@
 		FB53F1B32855DD6D003D411A /* StudyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyModel.swift; sourceTree = "<group>"; };
 		FB53F1B62855DD94003D411A /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		FB53F1B82855DDB9003D411A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FB53F1C42857399C003D411A /* StudyListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListCellView.swift; sourceTree = "<group>"; };
+		FB53F1C628573CB3003D411A /* StudyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			isa = PBXGroup;
 			children = (
 				77F212A72855E3A50066E537 /* DetailView */,
-				39EA5E742855C85C00583ECB /* CreateRoomModalView.swift */,
+				39EA5E762855C85C00583ECB /* mainView2.swift */,
 				39EA5E732855C85B00583ECB /* EnterRoomModalView.swift */,
-				39EA5E762855C85C00583ECB /* MainView2.swift */,
-				39EA5E752855C85C00583ECB /* TestView.swift */,
+				39EA5E742855C85C00583ECB /* CreateRoomModalView.swift */,
+				39EA5E752855C85C00583ECB /* PickerView.swift */,
+				FB53F1C628573CB3003D411A /* StudyListView.swift */,
+				FB53F1C42857399C003D411A /* StudyListCellView.swift */,
 				A0E3F4D62853779F00F50893 /* MainViewGroup */,
 				204E74CE284CDA3200EBEF22 /* LoginView.swift */,
 				204E74DD284CE73400EBEF22 /* HomeView.swift */,
@@ -320,7 +326,7 @@
 				A0E3F4CD2853778600F50893 /* MainView.swift in Sources */,
 				204E74CF284CDA3200EBEF22 /* LoginView.swift in Sources */,
 				77F212B82855E4F90066E537 /* DetailInformationView.swift in Sources */,
-				39EA5E7A2855C85C00583ECB /* MainView2.swift in Sources */,
+				39EA5E7A2855C85C00583ECB /* mainView2.swift in Sources */,
 				77F212AE2855E4650066E537 /* Ranking.swift in Sources */,
 				77F212B62855E4DF0066E537 /* UserGrid.swift in Sources */,
 				A0E3F4D12853778B00F50893 /* MainDummy.swift in Sources */,
@@ -330,14 +336,16 @@
 				A0E3F4CF2853778900F50893 /* MainListView.swift in Sources */,
 				77F212B22855E4B10066E537 /* DetailNFCView.swift in Sources */,
 				77F212B02855E4920066E537 /* DetailRankingView.swift in Sources */,
+				FB53F1C52857399C003D411A /* StudyListCellView.swift in Sources */,
 				77F212BA2855E5140066E537 /* RoomCode.swift in Sources */,
 				39EA5E782855C85C00583ECB /* CreateRoomModalView.swift in Sources */,
 				3950818A2855D6A5000CB1AA /* NewFile.swift in Sources */,
 				FB53F1B22855DD53003D411A /* AttendenceInfoModel.swift in Sources */,
 				204E74DE284CE73400EBEF22 /* HomeView.swift in Sources */,
 				FB53F1B92855DDB9003D411A /* UserModel.swift in Sources */,
-				39EA5E792855C85C00583ECB /* TestView.swift in Sources */,
+				39EA5E792855C85C00583ECB /* PickerView.swift in Sources */,
 				FB53F1B42855DD6D003D411A /* StudyModel.swift in Sources */,
+				FB53F1C728573CB4003D411A /* StudyListView.swift in Sources */,
 				391921FE2840BB3A00094A48 /* GongbuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

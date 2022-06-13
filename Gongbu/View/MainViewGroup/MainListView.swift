@@ -14,7 +14,7 @@ struct MainListView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [GridItem()], content: {
-                ForEach(userViewModel.user.joinedStudy, id:\.name, content: { joined in
+                ForEach(userViewModel.user.joinedStudy, id:\.code, content: { joined in
                     NavigationLink {
                         Text("\(joined.name)")
                     } label: {

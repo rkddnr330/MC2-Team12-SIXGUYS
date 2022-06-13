@@ -10,35 +10,56 @@ import Foundation
 class UserViewModel: ObservableObject {
     @Published var user: User = User(id: UUID(),
                                  userInfo: userInfo1,
-                                 joinedStudy: [study1, study2, study3, study4])
+                                 joinedStudy: [study1, study2, study3, study4, study5, study6, study7])
 }
 
 extension UserViewModel {
     static var study1: Study = Study(code: "3ABCDE",
                               name: "모각코",
                               day: "월화수",
-                              time: "1011",
+                              time: "10:11",
                               memberInfo: [userInfo1, userInfo2, userInfo3, userInfo4, userInfo5, userInfo6],
                                      memberAttendenceInfo: [userInfo1: attendenceInfo1, userInfo2: attendenceInfo1, userInfo3: attendenceInfo1, userInfo4: attendenceInfo1, userInfo5: attendenceInfo1, userInfo6: attendenceInfo1])
     
     static let study2: Study = Study(code: "34BCDE",
                               name: "디자인 딱대",
                               day: "수목",
-                              time: "1011",
+                              time: "10:11",
                               memberInfo: [userInfo1],
                               memberAttendenceInfo: [userInfo1: attendenceInfo1])
     
     static let study3: Study = Study(code: "3ABC3E",
                               name: "알고리즘 딱대",
                               day: "일",
-                              time: "1111",
+                              time: "11:11",
                               memberInfo: [userInfo1],
                               memberAttendenceInfo: [userInfo1: attendenceInfo1])
     
     static let study4: Study = Study(code: "3AB21E",
                               name: "영어회화",
-                              day: "화목",
-                              time: "1211",
+                              day: "화수목",
+                              time: "12:11",
+                              memberInfo: [userInfo1, userInfo4],
+                                     memberAttendenceInfo: [userInfo1: attendenceInfo1, userInfo4: attendenceInfo1])
+    
+    static let study5: Study = Study(code: "3AC21E",
+                              name: "영어회화",
+                              day: "월목",
+                              time: "12:21",
+                              memberInfo: [userInfo1, userInfo4],
+                                     memberAttendenceInfo: [userInfo1: attendenceInfo1, userInfo4: attendenceInfo1])
+    
+    static let study6: Study = Study(code: "3FB21E",
+                              name: "영어회화",
+                              day: "수토",
+                              time: "12:31",
+                              memberInfo: [userInfo1, userInfo4],
+                                     memberAttendenceInfo: [userInfo1: attendenceInfo1, userInfo4: attendenceInfo1])
+    
+    static let study7: Study = Study(code: "3ABU1E",
+                              name: "영어회화",
+                              day: "화금",
+                              time: "12:11",
                               memberInfo: [userInfo1, userInfo4],
                                      memberAttendenceInfo: [userInfo1: attendenceInfo1, userInfo4: attendenceInfo1])
 }

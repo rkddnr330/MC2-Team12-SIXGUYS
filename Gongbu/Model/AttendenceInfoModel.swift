@@ -8,7 +8,7 @@
 import Foundation
 
 struct AttendenceInfo {
-    var numberOfAttendance: Int
+    var numberOfAttendence: Int
     var numberOfAbsent: Int
     var numberOfLate: Int
 }

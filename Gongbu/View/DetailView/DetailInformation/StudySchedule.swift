@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct StudySchedule: View {
-    @State private var schedule = ["월요일 PM 5:00", "수요일 PM 5:00", "금요일 AM 10:00"]
     let schedules: [Schedule] = [
         .init(day: .sun, time: Date()),
         .init(day: .tue, time: Date() + 120),

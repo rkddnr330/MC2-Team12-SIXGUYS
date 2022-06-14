@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StudyListCellView: View {
     
-    let joinedStudy: Study
+    let schedule: Schedule
     @State var expand = false
     
     var body: some View {
@@ -26,7 +26,7 @@ struct StudyListCellView: View {
             }){
                 HStack {
                     VStack(alignment: .leading){
-                        Text("\(joinedStudy.day)")
+                        Text("\(schedule.day.rawValue)")
                             .foregroundColor(Color.black)
                         Spacer()
                     }.padding(6)
@@ -34,7 +34,7 @@ struct StudyListCellView: View {
                     Spacer()
                     
                     VStack(alignment: .trailing){
-                        Text("\(joinedStudy.time)")
+                        Text("\(schedule.time)")
                             .foregroundColor(Color.black)
                         Spacer()
                     }.padding(6)

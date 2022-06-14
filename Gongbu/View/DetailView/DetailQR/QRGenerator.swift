@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QRGenerateView: View {
     
-    @State var user = UserViewModel.userInfo1.eMail
+    @State var user = "Plankton"
     
     var body: some View {
         VStack {

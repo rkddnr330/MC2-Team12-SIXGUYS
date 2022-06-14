@@ -9,6 +9,6 @@ import Foundation
 
 struct User {
     let id: UUID
-    var userInfo: UserInfo
-    var joinedStudy: [Study]
+    var fullName: String
+    var joinedStudy: [String]
 }

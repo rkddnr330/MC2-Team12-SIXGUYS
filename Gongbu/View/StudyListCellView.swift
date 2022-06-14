@@ -34,7 +34,7 @@ struct StudyListCellView: View {
                     Spacer()
                     
                     VStack(alignment: .trailing){
-                        Text("\(schedule.time)")
+                        Text("\(schedule.time.toString())")
                             .foregroundColor(Color.black)
                         Spacer()
                     }.padding(6)

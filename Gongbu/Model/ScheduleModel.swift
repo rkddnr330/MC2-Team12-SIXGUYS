@@ -20,3 +20,13 @@ enum Day: String, CaseIterable {
     case fri = "Fri"
     case sat = "Sat"
 }
+
+extension Date {
+    func toString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "a hh:mm"
+        dateFormatter.locale = Locale(identifier:"ko_KR")
+        
+        return dateFormatter.string(from: self)
+    }
+}

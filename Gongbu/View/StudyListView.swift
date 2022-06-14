@@ -15,8 +15,8 @@ struct StudyListView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [GridItem()], content: {
-                ForEach(userViewModel.user.joinedStudy, id:\.code, content: { joined in
-                    StudyListCellView(joinedStudy: joined)
+                ForEach(userViewModel.user.joinedStudy[0].schedule, id:\.self, content: { scheduled in
+                    StudyListCellView(schedule: scheduled)
                 })
             })
             Spacer()

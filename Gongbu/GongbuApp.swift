@@ -6,7 +6,7 @@ struct GongbuApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            mainView2()
+            ContentView()
         }
     }
 }

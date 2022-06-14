@@ -20,6 +20,7 @@
 		391922002840BB3A00094A48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391921FF2840BB3A00094A48 /* ContentView.swift */; };
 		391922022840BB3B00094A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391922012840BB3B00094A48 /* Assets.xcassets */; };
 		391922052840BB3B00094A48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391922042840BB3B00094A48 /* Preview Assets.xcassets */; };
+		39E34D332858609900977411 /* DataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E34D322858609900977411 /* DataTestView.swift */; };
 		39EA5E772855C85C00583ECB /* EnterRoomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E732855C85B00583ECB /* EnterRoomModalView.swift */; };
 		39EA5E782855C85C00583ECB /* CreateRoomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA5E742855C85C00583ECB /* CreateRoomModalView.swift */; };
 		77F212A92855E43A0066E537 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F212A82855E43A0066E537 /* DetailView.swift */; };
@@ -61,6 +62,7 @@
 		391921FF2840BB3A00094A48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		391922012840BB3B00094A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		391922042840BB3B00094A48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		39E34D322858609900977411 /* DataTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTestView.swift; sourceTree = "<group>"; };
 		39EA5E732855C85B00583ECB /* EnterRoomModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterRoomModalView.swift; sourceTree = "<group>"; };
 		39EA5E742855C85C00583ECB /* CreateRoomModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRoomModalView.swift; sourceTree = "<group>"; };
 		77F212A82855E43A0066E537 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		391921FC2840BB3A00094A48 /* Gongbu */ = {
 			isa = PBXGroup;
 			children = (
+				39E34D312858608E00977411 /* Firestore */,
 				FB53F1B02855DD28003D411A /* Model */,
 				A0E3F4C428536A7200F50893 /* GoogleService-Info.plist */,
 				204E74D3284CDA6E00EBEF22 /* ViewModel */,
@@ -168,6 +171,14 @@
 				391922042840BB3B00094A48 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		39E34D312858608E00977411 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				39E34D322858609900977411 /* DataTestView.swift */,
+			);
+			path = Firestore;
 			sourceTree = "<group>";
 		};
 		77F212A72855E3A50066E537 /* DetailView */ = {
@@ -328,6 +339,7 @@
 				77F212BC2855E52A0066E537 /* StudySchedule.swift in Sources */,
 				A0E3F4CD2853778600F50893 /* MainView.swift in Sources */,
 				204E74CF284CDA3200EBEF22 /* LoginView.swift in Sources */,
+				39E34D332858609900977411 /* DataTestView.swift in Sources */,
 				77F212B82855E4F90066E537 /* DetailInformationView.swift in Sources */,
 				77F212AE2855E4650066E537 /* Ranking.swift in Sources */,
 				77F212B62855E4DF0066E537 /* UserGrid.swift in Sources */,

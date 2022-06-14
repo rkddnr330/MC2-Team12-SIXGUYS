@@ -11,6 +11,8 @@ struct StudyListCellView: View {
     
     let schedule: Schedule
     @State var expand = false
+    @ObservedObject var userViewModel: UserViewModel
+
     
     var body: some View {
         VStack {
@@ -26,7 +28,7 @@ struct StudyListCellView: View {
             }){
                 HStack {
                     VStack(alignment: .leading){
-                        Text("\(schedule.day.rawValue)")
+                        Text("\(schedule.day)")
                             .foregroundColor(Color.black)
                         Spacer()
                     }.padding(6)
@@ -34,7 +36,7 @@ struct StudyListCellView: View {
                     Spacer()
                     
                     VStack(alignment: .trailing){
-                        Text("\(schedule.time.toString())")
+                        Text("\(schedule.time)")
                             .foregroundColor(Color.black)
                         Spacer()
                     }.padding(6)
@@ -43,7 +45,7 @@ struct StudyListCellView: View {
             if expand {
                 VStack{
                     Spacer().frame(height: 30)
-                    PickerView()
+                    PickerView(userViewModel: userViewModel)
                     Spacer().frame(height: 30)
                 }
             }

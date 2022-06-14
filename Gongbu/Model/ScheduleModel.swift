@@ -7,18 +7,8 @@
 import Foundation
 
 struct Schedule: Hashable {
-    var day: Day
-    var time: Date
-}
-
-enum Day: String, CaseIterable {
-    case sun = "Sun"
-    case mon = "Mon"
-    case tue = "Tue"
-    case wed = "Wed"
-    case thu = "Thu"
-    case fri = "Fri"
-    case sat = "Sat"
+    var day: String
+    var time: String
 }
 
 extension Date {
@@ -28,5 +18,19 @@ extension Date {
         dateFormatter.locale = Locale(identifier:"ko_KR")
         
         return dateFormatter.string(from: self)
+    }
+}
+
+extension String {
+    func toDate() -> Date? { //"yyyy-MM-dd HH:mm:ss"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.locale = Locale(identifier:"ko_KR")
+        
+        if let date = dateFormatter.date(from: self) {
+            return date
+        } else {
+            return nil
+        }
     }
 }

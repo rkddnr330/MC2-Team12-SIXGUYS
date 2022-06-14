@@ -34,9 +34,9 @@ extension UserViewModel {
     static var study1: Study = Study(code: "3ABCDE",
                               name: "모각코",
                               schedule: [
-                                Schedule(day: .mon, time: Date()),
-                                Schedule(day: .tue, time: Date()),
-                                Schedule(day: .wed, time: Date())
+                                Schedule(day: "mon", time: "12:35"),
+                                Schedule(day: "tue", time: "15:22"),
+                                Schedule(day: "wed", time: "23:43")
                               ],
                               memberInfo: [userInfo1, userInfo2, userInfo3, userInfo4],
                                      memberAttendenceInfo: [userInfo1: attendenceInfo1, userInfo2: attendenceInfo1, userInfo3: attendenceInfo1, userInfo4: attendenceInfo1])
@@ -44,9 +44,9 @@ extension UserViewModel {
     static var study2: Study = Study(code: "34BCDE",
                               name: "디자인 딱대",
                               schedule: [
-                                Schedule(day: .mon, time: Date()),
-                                Schedule(day: .sat, time: Date()),
-                                Schedule(day: .sun, time: Date())
+                                Schedule(day: "mon", time: "09:12"),
+                                Schedule(day: "wed", time: "10:23"),
+                                Schedule(day: "sun", time: "17:30")
                               ],
                               memberInfo: [userInfo1],
                               memberAttendenceInfo: [userInfo1: attendenceInfo1])
@@ -54,8 +54,8 @@ extension UserViewModel {
     static var study3: Study = Study(code: "3ABC3E",
                               name: "알고리즘 딱대",
                               schedule: [
-                                Schedule(day: .wed, time: Date()),
-                                Schedule(day: .fri, time: Date()),
+                                Schedule(day: "wed", time: "19:25"),
+                                Schedule(day: "fri", time: "20:22"),
                               ],
                               memberInfo: [userInfo1],
                               memberAttendenceInfo: [userInfo1: attendenceInfo1])
@@ -63,8 +63,8 @@ extension UserViewModel {
     static var study4: Study = Study(code: "3AB21E",
                               name: "영어회화",
                               schedule: [
-                                Schedule(day: .tue, time: Date()),
-                                Schedule(day: .thu, time: Date()),
+                                Schedule(day: "tue", time: "12:34"),
+                                Schedule(day: "thu", time: "01:23"),
                               ],
                               memberInfo: [userInfo1, userInfo4],
                                      memberAttendenceInfo: [userInfo1: attendenceInfo1, userInfo4: attendenceInfo1])

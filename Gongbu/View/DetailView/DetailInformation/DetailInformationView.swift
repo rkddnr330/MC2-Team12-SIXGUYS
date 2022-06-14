@@ -23,7 +23,7 @@ struct DetailInformationView: View {
                 VStack{
                     RoomCode()
                         .padding(.vertical)
-                    StudySchedule()
+//                    StudySchedule()
                         .padding(.bottom)
                 }
             }

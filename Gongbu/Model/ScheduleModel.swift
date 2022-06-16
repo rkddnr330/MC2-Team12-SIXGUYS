@@ -6,15 +6,19 @@
 //
 import Foundation
 
-struct Schedule: Hashable {
-    var day: String
-    var time: String
-}
 
 extension Date {
-    func toString() -> String {
+    func toStringTime() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "a hh:mm"
+        dateFormatter.locale = Locale(identifier:"ko_KR")
+        
+        return dateFormatter.string(from: self)
+    }
+    
+    func toStringWeekday() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "E"
         dateFormatter.locale = Locale(identifier:"ko_KR")
         
         return dateFormatter.string(from: self)

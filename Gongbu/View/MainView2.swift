@@ -9,11 +9,11 @@ import SwiftUI
 import Firebase
 import FirebaseFirestoreSwift
 
-struct MainView: View {
-    @EnvironmentObject var data: ViewData
+struct MainView2: View {
+    @EnvironmentObject var data: DataViewModel
     var body: some View {
         NavigationView {
-            NavigationLink (destination: DetailView(), label: {
+            NavigationLink (destination: MainListView(), label: {
                 Text("Detail")
             })
         }
@@ -21,7 +21,7 @@ struct MainView: View {
     
 }
 
-struct MainViewPreviews: PreviewProvider {
+struct MainView2Previews: PreviewProvider {
     static var previews: some View {
         MainView()
     }

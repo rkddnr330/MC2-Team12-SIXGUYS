@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct StudyListView: View {
-    
-    @EnvironmentObject var dataViewModel: DataViewModel
+    @EnvironmentObject var data: DataViewModel
     @State var expand = false
     @State var index = 0
+    @Binding var newDay: [String]
+    @Binding var newTime: [String]
     
     var body: some View {
         ScrollView {
@@ -19,7 +20,7 @@ struct StudyListView: View {
                 // ‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️
                 // 지금은 study1을 넣었는데 스터디 id를 받아와서 거기에 맞는 뷰를 보내줘야 함
                 // 옵셔널 바인딩 구현
-                ForEach(DataViewModel.study1.day!.indices, id: \.self, content: { index in
+                ForEach(data.study!.day.indices, id: \.self, content: { index in
                     StudyListCellView(index: index)
                 })
             })

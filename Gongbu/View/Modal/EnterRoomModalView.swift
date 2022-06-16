@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct EnterRoomModalView: View {
-    
-    @State var studyCode: String
-    @EnvironmentObject var dataViewModel: DataViewModel
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var studyCode: String = "Code"
+    @EnvironmentObject var data: DataViewModel
     
     var body: some View {
         NavigationView {
@@ -29,7 +28,8 @@ struct EnterRoomModalView: View {
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button(action: {
-                        // 방 참가 할 수 있게 하는 액션
+                        data.enterRoom(id: studyCode)
+                        self.presentationMode.wrappedValue.dismiss()
                     }) {
                         Text("참가")
                             .font(.title2)
@@ -50,8 +50,8 @@ struct EnterRoomModalView: View {
     }
 }
 
-//struct EnterRoomModalView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        EnterRoomModalView(studyCode: <#T##String#>)
-//    }
-//}
+struct EnterRoomModalView_Previews: PreviewProvider {
+    static var previews: some View {
+        EnterRoomModalView()
+    }
+}

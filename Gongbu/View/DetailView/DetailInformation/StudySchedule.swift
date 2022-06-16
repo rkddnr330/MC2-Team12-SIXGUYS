@@ -9,8 +9,10 @@ import SwiftUI
 
 struct StudySchedule: View {
     @State private var isShowingEdit = false
-    @State private var study2Day = DataViewModel.study2.day!
-    @State private var study2Time = DataViewModel.study2.time!
+
+    
+    @ObservedObject private var rankingModel = RankingModel()
+    var roomId: String
     
     var body: some View {
         VStack(alignment: .leading){
@@ -43,11 +45,12 @@ struct StudySchedule: View {
             .padding(.vertical)
 
             List {
-                ForEach((0..<study2Day.count), id: \.self) { i in
+//                ForEach((0..<rankingModel.study.day!.count), id: \.self) { i in
+                ForEach(rankingModel.study.day.sorted(by: <), id: \.key) { key, value in
                     HStack{
-                        Text(study2Day[i]).bold()
+                        Text(value).bold()
                         Spacer()
-                        Text(study2Time[i]).bold()
+                        Text(rankingModel.study.time[key]!).bold()
                     }
                     .frame(width: 260)
                     .font(.body)
@@ -59,11 +62,15 @@ struct StudySchedule: View {
         .frame(width: 320)
         .background(Color(red: 0.969, green: 0.969, blue: 0.969))
         .cornerRadius(10)
+        .onAppear(){
+            self.rankingModel.fetchData(RoomId: roomId)
+        }
+        
     }
 }
 
-struct StudySchedule_Previews: PreviewProvider {
-    static var previews: some View {
-        StudySchedule()
-    }
-}
+//struct StudySchedule_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StudySchedule()
+//    }
+//}

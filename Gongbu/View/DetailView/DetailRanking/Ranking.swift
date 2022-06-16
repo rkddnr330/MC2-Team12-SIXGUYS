@@ -49,7 +49,7 @@ struct Ranking: View {
                             Text("\(Int(key)!+1)") //String을 Int로 바꾸는 법?!
                                 .frame(width:20, alignment: .leading)
                             
-                            Text(rankingModel.study.memberId[Int(key)!]) //String을 Int로 바꾸는 법?!
+                            Text(rankingModel.getFullName(id: rankingModel.study.memberId[Int(key)!])) //String을 Int로 바꾸는 법?!
                                 .frame(width: 95.0, alignment: .leading)
                                 .padding(.horizontal)
                             

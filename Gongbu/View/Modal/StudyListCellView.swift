@@ -31,7 +31,7 @@ struct StudyListCellView: View {
                         // ‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️
                         // 지금은 study1을 넣었는데 스터디 id를 받아와서 거기에 맞는 뷰를 보내줘야 함
                         // 옵셔널 바인딩 구현
-                        Text("\(DataViewModel.study1.day![index])")
+                        Text("\(DataViewModel.study![0].day![index])")
                             .foregroundColor(Color.black)
                         Spacer()
                     }.padding(6)
@@ -42,7 +42,7 @@ struct StudyListCellView: View {
                         // ‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️
                         // 지금은 study1을 넣었는데 스터디 id를 받아와서 거기에 맞는 뷰를 보내줘야 함
                         // 옵셔널 바인딩 구현
-                        Text("\(DataViewModel.study1.time![index])")
+                        Text("\(DataViewModel.study![0].time![index])")
                             .foregroundColor(Color.black)
                         Spacer()
                     }.padding(6)

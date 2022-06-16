@@ -7,8 +7,14 @@
 
 import Foundation
 
-struct User {
-    let id: UUID
-    var fullName: String
-    var joinedStudy: [String]
+public struct User: Codable {
+    var id: String?
+    var fullName: String?
+    var joinedStudy: [String]?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case fullName
+        case joinedStudy
+    }
 }

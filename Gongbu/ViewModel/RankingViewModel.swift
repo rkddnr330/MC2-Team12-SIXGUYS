@@ -12,34 +12,10 @@ import FirebaseFirestore
 
 class RankingModel: ObservableObject {
     @Published var studies = [Study]()
-    @Published var study = Study(title: "", numberOfAttendance: [:], numberOfAbsent: [:], numberOfLate: [:], attendancePoint: [:])
+    @Published var study = Study(id: "",title: "", day: [:], time: [:], numberOfAttendance: [:], numberOfAbsent: [:], numberOfLate: [:], attendancePoint: [:])
     
     private var db = Firestore.firestore()
     
-    func fetchDate(){
-        db.collection("Study1").addSnapshotListener{(querySnapshot, error) in
-            guard let documents = querySnapshot?.documents else {
-                print("No Documents")
-                return
-            }
-            
-            self.studies = documents.map{ (queryDocumentSnapshot) -> Study in
-                let data = queryDocumentSnapshot.data()
-                
-                let title = data["title"] as? String ?? ""
-                let day = data["day"] as? Array<String>
-                let time = data["time"] as? Array<String>
-                let numberOfAttendance = data["numberOfAttendance"] as? Dictionary<String, Int> ?? [:]
-                let numberOfAbsent = data["numberOfAbsent"] as? Dictionary<String, Int> ?? [:]
-                let numberOfLate = data["numberOfLate"] as? Dictionary<String, Int> ?? [:]
-                let attendancePoint = data["attendancePoint"] as? Dictionary<String, Int> ?? [:]
-                let memberId = data["memberId"] as? Array<String>
-                
-                
-                return Study(title: title, day: day, time: time, numberOfAttendance: numberOfAttendance, numberOfAbsent: numberOfAbsent, numberOfLate: numberOfLate, attendancePoint: attendancePoint, memberId: memberId)
-            }
-        }
-    }
     
     func fetchData(RoomId: String){
         db.collection("Study1").document(RoomId).addSnapshotListener{ documentSnapshot, error in
@@ -48,16 +24,38 @@ class RankingModel: ObservableObject {
             }
             self.study = document.data().map { (data) -> Study in
                 let title = data["title"] as? String ?? ""
-                let day = data["day"] as? Array<String>
-                let time = data["time"] as? Array<String>
+                let day = data["day"] as? Dictionary<String, String> ?? [:]
+                let time = data["time"] as? Dictionary<String, String> ?? [:]
                 let numberOfAttendance = data["numberOfAttendance"] as? Dictionary<String, Int> ?? [:]
                 let numberOfAbsent = data["numberOfAbsent"] as? Dictionary<String, Int> ?? [:]
                 let numberOfLate = data["numberOfLate"] as? Dictionary<String, Int> ?? [:]
                 let attendancePoint = data["attendancePoint"] as? Dictionary<String, Int> ?? [:]
                 let memberId = data["memberId"] as? Array<String>
                 
-                return Study(title: title, day: day, time: time, numberOfAttendance: numberOfAttendance, numberOfAbsent: numberOfAbsent, numberOfLate: numberOfLate, attendancePoint: attendancePoint, memberId: memberId)
+                return Study(id: RoomId, title: title, day: day, time: time, numberOfAttendance: numberOfAttendance, numberOfAbsent: numberOfAbsent, numberOfLate: numberOfLate, attendancePoint: attendancePoint, memberId: memberId)
             }!
         }
     }
+    
+    
+    func getFullName(id: String) -> String{
+        print("[id] : \(id)")
+        let db = Firestore.firestore()
+        let userDB = db.collection("User1").document(id)
+        var user1: User = User(id: "", fullName: "", joinedStudy: [""])
+        
+        userDB.getDocument(as: User.self) { result in
+            switch result {
+                case .success(let user):
+                print("[fullName1] : \(user.fullName)")
+                user1 = user
+                case .failure(let error):
+                    // 실패했을 때
+                    print("Error decoding User: \(error)")
+            }
+        }
+        print("[fullName] : \(user1.fullName)")
+        return user1.fullName!
+    }
+    
 }

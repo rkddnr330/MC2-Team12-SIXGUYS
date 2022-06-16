@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailInformationView: View {
     @State private var isShowingActionSheet = false
+    var roomId: String
     
     var body: some View {
         VStack{
@@ -21,9 +22,9 @@ struct DetailInformationView: View {
                     Spacer()
                 }
                 VStack{
-                    RoomCode()
+                    RoomCode(roomId: roomId)
                         .padding(.vertical)
-                    StudySchedule()
+                    StudySchedule(roomId: roomId)
                         .padding(.bottom)
                 }
             }
@@ -56,8 +57,8 @@ struct DetailInformationView: View {
 }
 
 
-struct DetailInformationView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailInformationView()
-    }
-}
+//struct DetailInformationView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailInformationView()
+//    }
+//}

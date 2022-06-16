@@ -2,19 +2,28 @@
 //  MainListView.swift
 //  Gongbu
 //
-//  Created by Terry Koo on 2022/06/15.
+//  Created by KiWoong Hong on 2022/06/09.
 //
 
 import SwiftUI
 
 struct MainListView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @EnvironmentObject var data: DataViewModel
+   
 
-struct MainListView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainListView()
+    var body: some View {
+//        Text(data.study!.title!)
+        ScrollView {
+            LazyVGrid(columns: [GridItem()], content: {
+                ForEach(data.study ?? [] , id:\.self.id, content: { room in
+                    NavigationLink {
+                        DetailView(roomId: room.id)
+                    } label: {
+                        MainListCellView(joinedStudy: room)
+                            .accentColor(.black)
+                    }
+                })
+            })
+        }
     }
 }

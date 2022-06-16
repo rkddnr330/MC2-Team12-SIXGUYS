@@ -6,8 +6,11 @@ struct GongbuApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            //ContentView()
-            MainView()
+            ContentView()
+//            MainView()
+//                .environmentObject(data)
+//            MainView()
+//                .environmentObject(data)
         }
     }
 }

@@ -10,7 +10,9 @@ import SwiftUI
 struct RoomCode: View {
     @State private var isShowingToast = false
     private let pasteboard = UIPasteboard.general
-    var roomCode = DataViewModel.study2.id
+    
+    @ObservedObject private var rankingModel = RankingModel()
+    var roomId: String
     
     var body: some View {
         HStack {
@@ -20,13 +22,14 @@ struct RoomCode: View {
                 .foregroundColor(.black)
             Spacer()
             Button {
-                pasteboard.string = roomCode
+                pasteboard.string = roomId
                 isShowingToast = true
             } label: {
-                Text(roomCode)
+                Text(roomId)
                     .font(.title)
                     .foregroundColor(.black)
                     .underline()
+                    .frame(width: 130)
             }
             .toast(isShowing: $isShowingToast)
         }
@@ -84,8 +87,8 @@ extension View {
 }
 
 
-struct RoomCode_Previews: PreviewProvider {
-    static var previews: some View {
-        RoomCode()
-    }
-}
+//struct RoomCode_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RoomCode()
+//    }
+//}

@@ -2,14 +2,24 @@
 //  MainView.swift
 //  Gongbu
 //
-//  Created by Terry Koo on 2022/06/15.
+//  Created by KiWoong Hong on 2022/06/09.
 //
 
 import SwiftUI
 
 struct MainView: View {
+    
+    @EnvironmentObject var data: DataViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                MainHeaderView(userName: data.user?.fullName ?? "noname")
+                MainListView()
+                Spacer()
+            }
+            .navigationBarHidden(true)
+        }
     }
 }
 

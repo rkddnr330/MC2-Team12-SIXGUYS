@@ -9,9 +9,9 @@ import SwiftUI
 
 struct StudyListCellView: View {
     
-    let schedule: Schedule
     @State var expand = false
-    @ObservedObject var userViewModel: UserViewModel
+    @State var index: Int = 0
+    @EnvironmentObject var dataViewModel: DataViewModel
 
     
     var body: some View {
@@ -28,7 +28,10 @@ struct StudyListCellView: View {
             }){
                 HStack {
                     VStack(alignment: .leading){
-                        Text("\(schedule.day)")
+                        // ‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️
+                        // 지금은 study1을 넣었는데 스터디 id를 받아와서 거기에 맞는 뷰를 보내줘야 함
+                        // 옵셔널 바인딩 구현
+                        Text("\(DataViewModel.study1.day![index])")
                             .foregroundColor(Color.black)
                         Spacer()
                     }.padding(6)
@@ -36,7 +39,10 @@ struct StudyListCellView: View {
                     Spacer()
                     
                     VStack(alignment: .trailing){
-                        Text("\(schedule.time)")
+                        // ‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️
+                        // 지금은 study1을 넣었는데 스터디 id를 받아와서 거기에 맞는 뷰를 보내줘야 함
+                        // 옵셔널 바인딩 구현
+                        Text("\(DataViewModel.study1.time![index])")
                             .foregroundColor(Color.black)
                         Spacer()
                     }.padding(6)
@@ -45,7 +51,7 @@ struct StudyListCellView: View {
             if expand {
                 VStack{
                     Spacer().frame(height: 30)
-                    PickerView(userViewModel: userViewModel)
+                    PickerView()
                     Spacer().frame(height: 30)
                 }
             }

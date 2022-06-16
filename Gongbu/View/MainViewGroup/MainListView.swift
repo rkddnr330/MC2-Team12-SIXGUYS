@@ -2,27 +2,19 @@
 //  MainListView.swift
 //  Gongbu
 //
-//  Created by KiWoong Hong on 2022/06/09.
+//  Created by Terry Koo on 2022/06/15.
 //
 
 import SwiftUI
 
 struct MainListView: View {
-    
-    @ObservedObject var userViewModel: UserViewModel
-    
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: [GridItem()], content: {
-                ForEach(userViewModel.user.joinedStudy, id:\.code, content: { joined in
-                    NavigationLink {
-                        Text("\(joined.name)")
-                    } label: {
-                        MainListCellView(joinedStudy: joined)
-                            .accentColor(.black)
-                    }
-                })
-            })
-        }
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+struct MainListView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainListView()
     }
 }

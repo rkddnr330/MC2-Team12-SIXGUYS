@@ -9,14 +9,18 @@ import SwiftUI
 
 struct StudyListView: View {
     
-    @ObservedObject var userViewModel: UserViewModel
+    @EnvironmentObject var dataViewModel: DataViewModel
     @State var expand = false
+    @State var index = 0
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [GridItem()], content: {
-                ForEach(userViewModel.user.joinedStudy[0].schedule, id:\.self, content: { scheduled in
-                    StudyListCellView(schedule: scheduled, userViewModel: userViewModel)
+                // ‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️
+                // 지금은 study1을 넣었는데 스터디 id를 받아와서 거기에 맞는 뷰를 보내줘야 함
+                // 옵셔널 바인딩 구현
+                ForEach(DataViewModel.study1.day!.indices, id: \.self, content: { index in
+                    StudyListCellView(index: index)
                 })
             })
             Spacer()

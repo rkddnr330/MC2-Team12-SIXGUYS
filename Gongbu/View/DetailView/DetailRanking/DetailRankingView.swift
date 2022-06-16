@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailRankingView: View {
     @State private var isShowingPopover = false
+    var roomId: String
     
     var body: some View {
         VStack {
@@ -30,18 +31,19 @@ struct DetailRankingView: View {
                 }
                 .padding(.vertical, 10)
                 VStack {
-                    Ranking()
+                    Ranking(roomId: roomId)
                         .padding(.bottom)
                 }
             }
         }
         ///x
         .frame(width: 330, height: 600)
+        .padding(.bottom, 150)
     }
 }
 
-struct DetailRankingView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailRankingView()
-    }
-}
+//struct DetailRankingView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailRankingView()
+//    }
+//}

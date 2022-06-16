@@ -2,24 +2,14 @@
 //  MainView.swift
 //  Gongbu
 //
-//  Created by KiWoong Hong on 2022/06/09.
+//  Created by Terry Koo on 2022/06/15.
 //
 
 import SwiftUI
 
 struct MainView: View {
-    
-    @StateObject var userViewModel: UserViewModel = UserViewModel()
-    
     var body: some View {
-        NavigationView {
-            VStack {
-                MainHeaderView(userViewModel: userViewModel)
-                MainListView(userViewModel: userViewModel)
-                Spacer()
-            }
-            .navigationBarHidden(true)
-        }
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 

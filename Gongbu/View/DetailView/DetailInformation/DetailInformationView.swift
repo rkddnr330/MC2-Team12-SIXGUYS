@@ -23,7 +23,7 @@ struct DetailInformationView: View {
                 VStack{
                     RoomCode()
                         .padding(.vertical)
-//                    StudySchedule()
+                    StudySchedule()
                         .padding(.bottom)
                 }
             }
@@ -41,7 +41,11 @@ struct DetailInformationView: View {
                 ActionSheet(
                     title: Text("정말 나가시겠습니까?"),
                     buttons: [
-                        .destructive(Text("방 나가기")){ print("방 나가기 로직 활성") },
+                        .destructive(Text("방 나가기")){
+                            ///방 나가는 코드
+                            print("방 나가기 로직 활성")
+                            
+                        },
                         .cancel()
                     ]
                 )

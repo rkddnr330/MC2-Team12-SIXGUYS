@@ -10,7 +10,7 @@ import SwiftUI
 struct RoomCode: View {
     @State private var isShowingToast = false
     private let pasteboard = UIPasteboard.general
-    var roomCode = "A82VE2"
+    var roomCode = DataViewModel.study2.id
     
     var body: some View {
         HStack {
@@ -61,17 +61,17 @@ struct ToastModifier: ViewModifier {
             Spacer()
             HStack {
                 Image(systemName: "checkmark.circle")
-                    .foregroundColor(.blue)
+                    .foregroundColor(Color("MainColor"))
                 Text("Code Copied!")
                     .font(.footnote)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.black)
                 Spacer()
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding()
             .background(Color.white)
-            .cornerRadius(5)
-            .shadow(radius: 5)
+            .cornerRadius(15)
+            .shadow(radius: 3)
         }
         .padding()
     }

@@ -19,7 +19,10 @@ struct QuestionMarkText: View {
             }
             Text("스터디원들이 우리 스터디에 얼마나 기여했는지 알 수 있는 지표입니다. 출석은 3점, 지각은 1점, 지각은 0점으로 계산하였고, 각자의 승점을 순위표로 나타내 보았습니다! 누가 얼마나 스터디에 자주 참여했는지, 누가 제일 열심히 하는지 한 눈에 파악하기 쉽겠죠? 지금도 누군가는 내 순위를 호시탐탐 노리고 있다구요!")
                 .font(.headline)
+                .lineSpacing(6)
+                .frame(width: 300)
                 .padding(.vertical)
+            
             VStack(alignment: .leading) {
                 Text("R").bold() + Text(" : Ranking, 순위")
                 //                .padding(.vertical, 1)
@@ -59,6 +62,7 @@ struct QuestionMarkText: View {
             .frame(width:290)
         }
         .frame(width: 300, height: 600)
+        .padding(.bottom, 200)
     }
 }
 

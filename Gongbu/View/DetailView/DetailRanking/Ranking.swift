@@ -44,24 +44,29 @@ struct Ranking: View {
                 .foregroundColor(.gray)
 
                 List{
-                    ForEach(rankingModel.study.attendancePoint.sorted(by: <), id:\.key) { key, value in
+                    ForEach(rankingModel.study.attendancePoint!.sorted(by: <), id:\.key) { key, value in
                         HStack{
                             Text("\(Int(key)!+1)") //String을 Int로 바꾸는 법?!
                                 .frame(width:20, alignment: .leading)
                             
-                            Text(rankingModel.getFullName(id: rankingModel.study.memberId[Int(key)!])) //String을 Int로 바꾸는 법?!
+                            //Text(rankingModel.getFullName(id: rankingModel.study.memberId![Int(key)!]))
+                            let uuid = rankingModel.study.memberId![Int(key)!]
+                            
+                            Text("\(rankingModel.study.userName![uuid]!)")
+                            // Text(rankingModel.study.userName?["\(key)"] ?? "empty")
+                            //String을 Int로 바꾸는 법?!
                                 .frame(width: 95.0, alignment: .leading)
                                 .padding(.horizontal)
                             
-                            Text("\(rankingModel.study.numberOfAttendance[key]!)")
+                            Text("\(rankingModel.study.numberOfAttendance![key]!)")
                                 .frame(width: 20)
                             Divider()
 
-                            Text("\(rankingModel.study.numberOfLate[key]!)")
+                            Text("\(rankingModel.study.numberOfLate![key]!)")
                                 .frame(width: 20)
                             Divider()
 
-                            Text("\(rankingModel.study.numberOfAbsent[key]!)")
+                            Text("\(rankingModel.study.numberOfAbsent![key]!)")
                                 .frame(width: 30)
                             Divider()
                             ///build는 되는데 numberOfAbsent를 추출하니까 nil값이라는데???

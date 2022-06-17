@@ -11,7 +11,7 @@ struct QRButton: View {
     
     @State private var showQRCode = false
     @State private var isPresentingScanner: Bool = false
-    
+    let roomId: String
     
     var body: some View {
         HStack(spacing:50){
@@ -31,7 +31,7 @@ struct QRButton: View {
             .background(Color(red: 0.187, green: 0.417, blue: 0.533))
             .cornerRadius(10)
             .sheet(isPresented: $isPresentingScanner) {
-                QRScannerView(isPresentingScanner: $isPresentingScanner)
+                QRScannerView(isPresentingScanner: $isPresentingScanner, roomId: roomId)
             }
             
             Button {
@@ -49,15 +49,15 @@ struct QRButton: View {
             .background(Color(red: 0.467, green: 0.696, blue: 0.821))
             .cornerRadius(10)
             .sheet(isPresented: $showQRCode) {
-                QRGenerateView()
+                QRGenerateView(roomID: roomId)
             }
         }
         .padding(.horizontal)
     }
 }
 
-struct QRButton_Previews: PreviewProvider {
-    static var previews: some View {
-        QRButton()
-    }
-}
+//struct QRButton_Previews: PreviewProvider {
+//    static var previews: some View {
+//        QRButton()
+//    }
+//}

@@ -46,11 +46,11 @@ struct StudySchedule: View {
 
             List {
 //                ForEach((0..<rankingModel.study.day!.count), id: \.self) { i in
-                ForEach(rankingModel.study.day.sorted(by: <), id: \.key) { key, value in
+                ForEach((rankingModel.study.day!.sorted(by: <)), id: \.key) { key, value in
                     HStack{
                         Text(value).bold()
                         Spacer()
-                        Text(rankingModel.study.time[key]!).bold()
+                        Text(rankingModel.study.time![key]!).bold()
                     }
                     .frame(width: 260)
                     .font(.body)

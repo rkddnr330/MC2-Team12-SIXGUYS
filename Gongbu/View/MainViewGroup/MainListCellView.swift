@@ -22,9 +22,8 @@ struct MainListCellView: View {
                 Spacer()
             }
             HStack {
-//                Text("매주 \(joinedStudy.day?.joined() ?? "")")
                 Text("매주 ")
-                ForEach(joinedStudy.day.sorted(by: <), id:\.key) { key, value in
+                ForEach(joinedStudy.day!.sorted(by: <), id:\.key) { key, value in
                     Text(value)
                 }
                 Spacer()

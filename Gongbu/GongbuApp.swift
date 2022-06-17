@@ -7,10 +7,6 @@ struct GongbuApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-//            MainView()
-//                .environmentObject(data)
-//            MainView()
-//                .environmentObject(data)
         }
     }
 }

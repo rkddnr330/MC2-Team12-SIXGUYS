@@ -32,6 +32,16 @@ class LoginViewModel: ObservableObject {
             // 로그인 성공
             print("Logged in Success")
             
+            if credential.email != nil {
+                let db = Firestore.firestore()
+                let name = String(describing: credential.fullName!.familyName!)+String(describing: credential.fullName!.givenName!)
+                db.collection("User1").document(Auth.auth().currentUser!.uid).setData([
+                    "fullName" : name,
+                    "joinedStudy" : []
+                ])
+                UserDefaults.standard.set(name, forKey: "defaultUserName")
+            }
+            
             // status 값을 바꾸면서 홈화면으로 이동
             withAnimation(.easeInOut) {
                 self.log_Status = true

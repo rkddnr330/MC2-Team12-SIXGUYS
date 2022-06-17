@@ -36,14 +36,8 @@ struct DetailRankingView: View {
                 }
             }
         }
-        ///x
         .frame(width: 330, height: 600)
         .padding(.bottom, 150)
     }
 }
 
-//struct DetailRankingView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailRankingView()
-//    }
-//}

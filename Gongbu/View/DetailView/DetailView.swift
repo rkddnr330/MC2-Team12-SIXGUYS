@@ -9,17 +9,16 @@ import SwiftUI
 
 struct DetailView: View {
     @State private var selectedTab = 1
-    @State private var studyName = "영어 회화 스터디"
+    @EnvironmentObject var data: DataViewModel
     var roomId: String
     
     var body: some View {
         NavigationView{
             VStack {
-                ///우리가 얘기한 Carousel : TabView의 Style 중 하나 (PageTabViewStyle)
                 TabView(selection: $selectedTab){
                     DetailRankingView(roomId: roomId)
                         .tag(0)
-                    DetailQRView()
+                    DetailQRView(roomId: roomId)
                         .tag(1)
                     DetailInformationView(roomId: roomId)
                         .tag(2)
@@ -33,7 +32,7 @@ struct DetailView: View {
             }
             .navigationBarHidden(true)
         }
-        .navigationBarTitle(Text(studyName), displayMode: .inline)
+        .navigationBarTitle(Text("Study"), displayMode: .inline)
     }
     ///page control (indicator)
     func setupAppearance() {

@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct MainHeaderView: View {
     
+    @AppStorage("log_status") var log_Status = false
     @State private var showCreateRoomModal = false
     @State private var showEnterRoomModal = false
     
@@ -19,9 +21,23 @@ struct MainHeaderView: View {
         let size = UIScreen.main.bounds
         
         HStack {
-            Image(systemName: "person.crop.circle.fill")
-                .resizable()
-                .scaledToFit()
+            Menu(content: {
+                Button(action: {
+                    DispatchQueue.global(qos: .background).async {
+                        try? Auth.auth().signOut()
+                    }
+                    withAnimation(.easeInOut){
+                        log_Status = false
+                    }
+                }, label: {
+                    Text("로그아웃")
+                })
+            }, label: {
+                Image(systemName: "person.crop.circle.fill")
+                    .resizable()
+                    .scaledToFit()
+            }).accentColor(.black)
+
             Text("\(userName)")
                 .font(.title)
             Spacer()
@@ -36,10 +52,12 @@ struct MainHeaderView: View {
                 Label("", image: "plusButton")
             }
             .sheet(isPresented: self.$showEnterRoomModal) {
-                EnterRoomModalView()
+               // Text("EnterRoomModalView")
+              EnterRoomModalView()
             }
             .sheet(isPresented: self.$showCreateRoomModal) {
-                CreateRoomModalView()
+                // Text("CreateRoomModalView")
+              CreateRoomModalView()
             }
         }
         .padding()

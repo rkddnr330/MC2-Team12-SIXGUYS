@@ -12,7 +12,7 @@ import FirebaseFirestore
 
 class RankingModel: ObservableObject {
     @Published var studies = [Study]()
-    @Published var study = Study(id: "",title: "", day: [:], time: [:], numberOfAttendance: [:], numberOfAbsent: [:], numberOfLate: [:], attendancePoint: [:])
+    @Published var study = Study(id: "",title: "", day: [:], time: [:], numberOfAttendance: [:], numberOfAbsent: [:], numberOfLate: [:], attendancePoint: [:], userName: [:])
     
     private var db = Firestore.firestore()
     
@@ -31,8 +31,9 @@ class RankingModel: ObservableObject {
                 let numberOfLate = data["numberOfLate"] as? Dictionary<String, Int> ?? [:]
                 let attendancePoint = data["attendancePoint"] as? Dictionary<String, Int> ?? [:]
                 let memberId = data["memberId"] as? Array<String>
-                
-                return Study(id: RoomId, title: title, day: day, time: time, numberOfAttendance: numberOfAttendance, numberOfAbsent: numberOfAbsent, numberOfLate: numberOfLate, attendancePoint: attendancePoint, memberId: memberId)
+                let userName = data["userName"] as? Dictionary<String, String> ?? [:]
+ 
+                return Study(id: RoomId, title: title, day: day, time: time, numberOfAttendance: numberOfAttendance, numberOfAbsent: numberOfAbsent, numberOfLate: numberOfLate, attendancePoint: attendancePoint, memberId: memberId, userName: userName)
             }!
         }
     }

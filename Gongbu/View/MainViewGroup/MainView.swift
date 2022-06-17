@@ -9,15 +9,16 @@ import SwiftUI
 
 struct MainView: View {
     
-    @EnvironmentObject var data: DataViewModel
+    @ObservedObject var data: DataViewModel = DataViewModel()
     
     var body: some View {
         NavigationView {
             VStack {
-                MainHeaderView(userName: data.user?.fullName ?? "noname")
+                MainHeaderView(userName: data.user?.fullName ?? "Loading")
                 MainListView()
                 Spacer()
             }
+            .environmentObject(data)
             .navigationBarHidden(true)
         }
     }

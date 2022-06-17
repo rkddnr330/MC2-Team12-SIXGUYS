@@ -5,7 +5,8 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             if log_Status {
-                HomeView()
+                //HomeView()
+                MainView()
             }
             else{
                 LoginView()

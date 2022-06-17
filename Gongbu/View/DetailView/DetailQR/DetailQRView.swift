@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DetailQRView: View {
+    
+    let roomId:String
     var body: some View {
         VStack{
             VStack {
@@ -18,10 +20,10 @@ struct DetailQRView: View {
                         .padding(.vertical)
                     Spacer()
                 }
-                UserGrid()
+                UserGrid(roomId: roomId)
                     .padding(.vertical)
                 Spacer()
-                QRButton()
+                QRButton(roomId: roomId)
                     .padding(.bottom, 70)
             }
         }
@@ -29,8 +31,8 @@ struct DetailQRView: View {
     }
 }
 
-struct DetailQRView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailQRView()
-    }
-}
+//struct DetailQRView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailQRView()
+//    }
+//}

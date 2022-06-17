@@ -37,13 +37,14 @@ import Foundation
 public struct Study: Identifiable, Codable, Hashable {
     public var id: String
     var title: String
-    var day: [String:String]
-    var time: [String:String]
-    var numberOfAttendance: [String:Int] // Dic
-    var numberOfAbsent: [String:Int] // Dic
-    var numberOfLate: [String:Int] // Dic
-    var attendancePoint: [String:Int] // Dic
-    var memberId: [String]!
+    var day: [String:String]?
+    var time: [String:String]?
+    var numberOfAttendance: [String:Int]? // Dic
+    var numberOfAbsent: [String:Int]? // Dic
+    var numberOfLate: [String:Int]? // Dic
+    var attendancePoint: [String:Int]? // Dic
+    var memberId: [String]?
+    var userName: [String: String]?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -55,5 +56,6 @@ public struct Study: Identifiable, Codable, Hashable {
         case numberOfLate
         case attendancePoint
         case memberId
+        case userName
     }
 }

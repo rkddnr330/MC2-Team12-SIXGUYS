@@ -61,7 +61,7 @@ struct QRScannerView: View {
                         //--------------
                         if result >= 0 {
                             ref.updateData([
-                                "currentAtt.\(userID)" : 0
+                                "currentAtt.\(userID)" : 5
                             ])
                         }
                         

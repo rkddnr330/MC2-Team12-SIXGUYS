@@ -78,7 +78,7 @@ struct QRScannerView: View {
             }
         })
         .onAppear{
-            
+            studyModel.fetchData(RoomId: roomId)
         }
     }
     

@@ -61,7 +61,7 @@ struct QRScannerView: View {
                         //--------------
                         if result >= 0 {
                             ref.updateData([
-                                "currentAtt.\(userID)" : 5
+                                "currentAtt.\(userID)" : 0
                             ])
                         }
                         
@@ -78,7 +78,7 @@ struct QRScannerView: View {
             }
         })
         .onAppear{
-            studyModel.fetchData(RoomId: roomId)
+            
         }
     }
     

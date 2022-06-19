@@ -72,7 +72,7 @@ struct QRButton: View {
                     //--------------
                     // 지각
                     //--------------
-                    else if result < 0 && result >= -1400 {
+                    else if result < 0 && result >= -10 {
                         ref.updateData([
                             "currentAtt.\(userID)" : 1
                         ])
